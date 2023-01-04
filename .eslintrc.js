@@ -15,7 +15,7 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
-  plugins: ["react", "@typescript-eslint"],
+  plugins: ["react", "@typescript-eslint", "unused-imports"],
   rules: {
     "react-hooks/exhaustive-deps": [
       "warn",
@@ -34,5 +34,44 @@ module.exports = {
     "react/self-closing-comp": ["warn", { component: true, html: true }],
     "react/void-dom-elements-no-children": "error",
     "@typescript-eslint/explicit-module-boundary-types": "warn",
+    "sort-imports": [
+      "error",
+      { ignoreCase: true, ignoreDeclarationSort: true },
+    ],
+    "import/order": [
+      "error",
+      {
+        groups: [
+          "builtin",
+          "external",
+          "internal",
+          ["sibling", "parent"],
+          "object",
+        ],
+        pathGroups: [
+          {
+            pattern: "react",
+            group: "builtin",
+            position: "before",
+          },
+          {
+            pattern: ".*/UI/**",
+            group: "internal",
+            position: "before",
+          },
+          {
+            pattern: "./*.module.css",
+            group: "index",
+            position: "after",
+          },
+        ],
+        "newlines-between": "always",
+        alphabetize: {
+          order: "asc",
+          caseInsensitive: true,
+        },
+      },
+    ],
+    "unused-imports/no-unused-imports": "error",
   },
 };
