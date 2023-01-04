@@ -1,4 +1,11 @@
 ・@エイリアスの作成
+ ⇒"@test/*": ["components/test/*"]
+ ⇒OK
+
+・全体フォーマッタ
+npm run pretty
+⇒OK
+
 ・ノーパソでいけるか確認
  npm ci
  npm run dev
@@ -6,5 +13,4 @@
  ・
 ・デザインパターンの決定
 ・readme記載
-全体フォーマッタ
-npm run pretty
+

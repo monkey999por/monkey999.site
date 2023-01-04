@@ -17,7 +17,11 @@
     "resolveJsonModule": true,
     "jsx": "preserve",
     "module": "esnext",
-    "isolatedModules": true
+    "isolatedModules": true,
+    "baseUrl": "./src/",
+    "paths": {
+      "@test/*": ["components/test/*"]
+    }
   },
   "include": ["src/**/*", "next-env.d.ts"],
   "exclude": ["node_modules", "**/*.spec.ts"]
