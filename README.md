@@ -17,6 +17,8 @@ npm run pretty
 ├─components
 │  ├─atoms
 │  │  └─SampleAtom
+│  │    ├─index.tsx ※コンポーネント本体
+│  │    └─sampleAtom.scss※コンポーネント固有のCSS
 │  ├─molecules
 │  │  └─SampleMolecules
 │  ├─organisms
