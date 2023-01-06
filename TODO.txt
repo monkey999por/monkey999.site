@@ -1,9 +1,5 @@
-・readme記載
-起動まで
-$npm ci
-$npm run dev
-全体フォーマッタ
-npm run pretty
+
+
 @エイリアスの作成
 "@test/*": ["components/test/*"]
 
@@ -16,4 +12,8 @@ componentのファイルはindexでディレクトリとexport関数に名前を
 styles, hooks, typesはコンポーネント依存になると思うので各コンポーネントのディレクトリにおけばいいかな
 普通にひとつづつしかおかないはずなので、変に命名ルール決めて運用する方がコスト高いし
 共通のstyles, hooks, typesはutilsの下にそれぞれ置くか
+
+
+・readmeにディレクトリ構成記載
+・カスタムフックのサンプル作成、使用
 

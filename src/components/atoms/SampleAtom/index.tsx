@@ -1,12 +1,12 @@
-import styles from "@utils/styles/Test.module.scss";
-import { Dummys } from "@utils/types/testType";
+import styles from "@utils/styles/Sample.module.scss";
+import { Dummys } from "@utils/types/sampleType";
 import Head from "next/head";
 type Props = {
   value: string;
   keys?: number[];
 };
 
-export default function TestAtom() {
+export default function SampleAtom() {
   const typetest: Dummys = {
     val: 123,
   };
