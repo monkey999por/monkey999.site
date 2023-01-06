@@ -1,16 +1,19 @@
-・@エイリアスの作成
- ⇒"@test/*": ["components/test/*"]
- ⇒OK
-
-・全体フォーマッタ
-npm run pretty
-⇒OK
-
-・ノーパソでいけるか確認
- npm ci
- npm run dev
- ・フォーマッタの確認
- ・
-・デザインパターンの決定
 ・readme記載
+起動まで
+$npm ci
+$npm run dev
+全体フォーマッタ
+npm run pretty
+@エイリアスの作成
+"@test/*": ["components/test/*"]
+
+
+ファイル名はpages意外は基本大文字で
+components配下はatmic designで作って、その下にコンポーネントごとのディレクトリ用意して
+componentのファイルはindexでディレクトリとexport関数に名前を付ける
+
+
+styles, hooks, typesはコンポーネント依存になると思うので各コンポーネントのディレクトリにおけばいいかな
+普通にひとつづつしかおかないはずなので、変に命名ルール決めて運用する方がコスト高いし
+共通のstyles, hooks, typesはutilsの下にそれぞれ置くか
 

@@ -20,7 +20,11 @@
     "isolatedModules": true,
     "baseUrl": "./src/",
     "paths": {
-      "@test/*": ["components/test/*"]
+      "@atoms/*": ["components/atoms/*"],
+      "@molecules/*": ["components/molecules/*"],
+      "@organisms/*": ["components/organisms/*"],
+      "@templates/*": ["components/templates/*"],
+      "@utils/*": ["utils/*"]
     }
   },
   "include": ["src/**/*", "next-env.d.ts"],
