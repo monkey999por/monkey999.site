@@ -10,7 +10,7 @@ import styles from "@utils/styles/komorikosha.module.scss";
 
 export default function portfolio02(): JSX.Element {
   return (
-    <div>
+    <div className={styles.container}>
       <HeadTitle />
       <canvas className={styles.myCanvas} />
       <SampleHead />
