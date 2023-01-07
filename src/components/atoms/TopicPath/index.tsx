@@ -16,7 +16,7 @@ export default function TopicPath(): JSX.Element {
             <a key={index} href={path}>
               {getPageInfo(path).title}
             </a>
-            {getPageInfo(router.asPath).breadcrumb.length > index ? "&gt;" : ""}
+            {getPageInfo(router.asPath).breadcrumb.length > index ? " > " : ""}
           </>
         );
       })}

@@ -1,15 +1,16 @@
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 import Copyright from "@atoms/Copyright";
 import HeadTitle from "@atoms/HeadTitle";
 import SampleHead from "@atoms/SampleHead";
-import TopicPath from "@atoms/TopicPath";
 import HeaderItem from "@molecules/HeaderItem";
-import NewsList from "@molecules/NewsList";
-import OtherMakes from "@molecules/OtherMakes";
 import styles from "@utils/styles/komorikosha.module.scss";
 
-export default function komorikosha() {
+export default function komorikosha(): JSX.Element {
+  const router = useRouter();
+  console.log(router.asPath);
+
   return (
     <>
       <div className={styles.container}>
@@ -19,7 +20,7 @@ export default function komorikosha() {
 
         <div className={styles.page}>
           <HeaderItem />
-          <TopicPath />
+          {/* <TopicPath /> */}
           <div className={styles.pageBody}>
             <section className={styles.mainVisual}>
               <div className={styles.mainVisualText}>
@@ -28,7 +29,7 @@ export default function komorikosha() {
                   baser CMS Cafe site theme
                   <br />
                   Baser CMS Theme Contest 2012 Restaurant Theme Award (Click
-                  here for award results ）
+                  here for award results )
                 </p>
               </div>
               <Image
@@ -94,8 +95,8 @@ export default function komorikosha() {
                       <time dateTime='2013-10-01'>2013/10/1</time>
                     </th>
                     <td>
-                      Comomo and Moriko are writing a book titled "HTML/CSS
-                      textbook (tentative title)". looking forward to.
+                      Comomo and Moriko are writing a book titled &quot;HTML/CSS
+                      textbook (tentative title)&quot;. looking forward to.
                     </td>
                   </tr>
                   <tr>
@@ -104,19 +105,19 @@ export default function komorikosha() {
                     </th>
                     <td>
                       Comomo, Moriko, and Hiromasa have opened a website called
-                      "komorikomash".
+                      &quot;komorikomash&quot;.
                     </td>
                   </tr>
                 </tbody>
               </table>
             </section>
             <div className={styles.pageBodySub}>
-              <OtherMakes />
-              <NewsList />
+              {/* <OtherMakes /> */}
+              {/* <NewsList /> */}
             </div>
           </div>
           <p className={styles.toPageTop}>
-            <a href='#page'>set to top</a>
+            <a href='#top'>set to top</a>
           </p>
           <Copyright />
         </div>

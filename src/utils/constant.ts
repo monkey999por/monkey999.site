@@ -1,13 +1,13 @@
 export const globalNavilinks: {
   [key: string]: string;
 } = {
-  home: "/index.html",
-  aboutMe: "/about/index.html",
-  portfolios: "/portfolio/index.html",
-  contact: "/contact/index.html",
-  wizard: "/portfolio/03.html",
-  wordpress: "/portfolio/02.html",
-  cafe: "/portfolio/01.html",
+  home: "/komorikosha",
+  aboutMe: "/komorikosha/about",
+  portfolios: "/komorikosha/portfolio",
+  contact: "/komorikosha/contact",
+  wizard: "/komorikosha/portfolio/03",
+  wordpress: "/komorikosha/portfolio/02",
+  cafe: "/komorikosha/portfolio/01",
 };
 
 export const PAGE_INFO: {

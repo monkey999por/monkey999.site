@@ -10,13 +10,13 @@ export default function NewsList(): JSX.Element {
       <ul>
         <li>
           <time dateTime='2013-10-01'>2013/10/1</time>
-          Comomo and Moriko are writing a book titled &quotHTML/CSS textbook
-          (tentative title)&quot. looking forward to.
+          Comomo and Moriko are writing a book titled &quot;HTML/CSS textbook
+          (tentative title)&quot;. looking forward to.
         </li>
         <li>
           <time dateTime='2013-10-01'>2013-10-1</time>
           Comomo, Moriko, and Hiromasa have opened a website called
-          &quotkomorikomash&quot.
+          &quot;komorikomash&quot;.
         </li>
       </ul>
     </section>

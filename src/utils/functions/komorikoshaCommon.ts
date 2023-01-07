@@ -11,5 +11,5 @@ export const getPageInfo = (path: string) => {
 };
 
 export const isRoot = (path: string): boolean => {
-  return path === globalNavilinks.home || path === "/";
+  return path === globalNavilinks.home;
 };

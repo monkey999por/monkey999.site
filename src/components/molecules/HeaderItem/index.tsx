@@ -12,18 +12,18 @@ export default function HeaderItem(): JSX.Element {
   return (
     <>
       <div className={styles.headerItem}>
-        <header id='pageHead'>
-          <h1 id='siteTitle'>komorikomasha</h1>
-          <p id='catchcopy'>
+        <header className={styles.pageHead}>
+          <h1 className={styles.siteTitle}>komorikomasha</h1>
+          <p className={styles.catchcopy}>
             What we cannot do alone, we can do together. 3 fun creations that
             give shape to what you want to try.
           </p>
         </header>
-        <nav id='globalNavi'>
+        <nav className={styles.globalNavi}>
           <ul>
             <li>
               <a
-                className={isRoot(router.asPath) ? "current" : ""}
+                className={isRoot(router.asPath) ? styles.current : ""}
                 href={globalNavilinks.home}
               >
                 home
@@ -33,7 +33,9 @@ export default function HeaderItem(): JSX.Element {
             <li>
               <a
                 className={
-                  globalNavilinks.aboutMe === router.asPath ? 'current"' : ""
+                  globalNavilinks.aboutMe === router.asPath
+                    ? styles.current
+                    : ""
                 }
                 href={globalNavilinks.aboutMe}
               >
@@ -42,7 +44,9 @@ export default function HeaderItem(): JSX.Element {
             </li>
             <li>
               <a
-                className={router.asPath.match(/portfolio/g) ? 'current"' : ""}
+                className={
+                  router.asPath.match(/portfolio/g) ? styles.current : ""
+                }
                 href={globalNavilinks.portfolios}
               >
                 portfolios
@@ -51,7 +55,9 @@ export default function HeaderItem(): JSX.Element {
             <li>
               <a
                 className={
-                  globalNavilinks.contact === router.asPath ? 'current"' : ""
+                  globalNavilinks.contact === router.asPath
+                    ? styles.current
+                    : ""
                 }
                 href={globalNavilinks.contact}
               >
