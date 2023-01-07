@@ -54,6 +54,14 @@ export default function Home() {
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>
+          <a href='/monkey999.work/console' className={styles.card}>
+            <h2>Console &rarr;</h2>
+            <p>Monkey999 console sample ddddddddddd</p>
+          </a>
+          <a href='/komorikosha' className={styles.card}>
+            <h2>komorikosha &rarr;</h2>
+            <p>komorikosha sample</p>
+          </a>
         </div>
       </main>
 

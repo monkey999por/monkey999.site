@@ -3,7 +3,7 @@ $color_2: inherit;
 $font-family_1: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
   Bitstream Vera Sans Mono, Courier New, monospace;
 $border-color_1: #0070f3;
-$border-color_2: #222;
+$border-color_2: rgb(103, 39, 39);
 
 .container {
   padding: 0 2rem;
@@ -71,6 +71,7 @@ $border-color_2: #222;
   max-width: 800px;
 }
 .card {
+  box-sizing: border-box;
   margin: 1rem;
   padding: 1.5rem;
   text-align: left;
@@ -80,6 +81,8 @@ $border-color_2: #222;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 300px;
+  min-width: 300px;
+  min-height: 200px;
   &:hover {
     color: $color_1;
     border-color: $border-color_1;
@@ -110,6 +113,9 @@ $border-color_2: #222;
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+  .card {
+    min-height: 100px;
   }
 }
 @media (prefers-color-scheme: dark) {
