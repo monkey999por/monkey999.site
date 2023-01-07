@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { useRouter } from "next/router";
 
 import Copyright from "@atoms/Copyright";
 import HeadTitle from "@atoms/HeadTitle";
@@ -8,9 +7,6 @@ import HeaderItem from "@molecules/HeaderItem";
 import styles from "@utils/styles/komorikosha.module.scss";
 
 export default function komorikosha(): JSX.Element {
-  const router = useRouter();
-  console.log(router.asPath);
-
   return (
     <>
       <div className={styles.container}>
