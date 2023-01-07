@@ -1,10 +1,12 @@
 import Head from "next/head";
-import Router from "next/router";
+import { Router, useRouter } from "next/router";
 import { useEffect, useRef, useState } from "react";
 
 import styles from "./console.module.scss";
 
 export default function Console(): JSX.Element {
+  const router = useRouter();
+  console.log(router);
   console.log("Console render");
 
   const [server, setServer] = useState("192.168.0.11");
@@ -156,7 +158,7 @@ export default function Console(): JSX.Element {
   return (
     <>
       <div
-        className={styles.continer}
+        className={styles.container}
         onClick={() => inputElement.current?.focus()}
       >
         <Head>

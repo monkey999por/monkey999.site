@@ -1,3 +1,6 @@
+import particlejs from "https://cdn.rawgit.com/ics-creative/ParticleJS/release/1.0.0/libs/particlejs.min.js";
+import createjs from "https://code.createjs.com/1.0.0/createjs.min.js";
+
 const globalNavilinks = {
   home: "/index.html",
   aboutMe: "/about/index.html",
@@ -194,10 +197,10 @@ document.addEventListener(
      * particle test
      */
     // Stageオブジェクトを作成します。表示リストのルートになります。
-    stage = new createjs.Stage("myCanvas");
+    const stage = new createjs.Stage("myCanvas");
 
     // パーティクルシステム作成します。
-    particleSystem = new particlejs.ParticleSystem();
+    const particleSystem = new particlejs.ParticleSystem();
 
     // パーティクルシステムの描画コンテナーを表示リストに登録します。
     stage.addChild(particleSystem.container);

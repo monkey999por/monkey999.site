@@ -7,20 +7,31 @@ body {
 }
 
 a {
-  color: inherit;
   text-decoration: none;
+  color: #999999;
 }
-
+a:hover {
+  color: #999900;
+}
+/* sanitize.cssを上書き */
+nav li {
+  list-style-type: initial;
+}
 * {
   box-sizing: border-box;
 }
 
+p {
+  font-size: 14px;
+  line-height: 1.429;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
-    color-scheme: dark;
+    /* color-scheme: dark; */
   }
   body {
     color: white;
-    background: black;
+    /* background: black; */
   }
 }

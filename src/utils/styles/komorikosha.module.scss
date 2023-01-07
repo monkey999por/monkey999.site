@@ -15,30 +15,30 @@
   float: left;
 }
 
-body {
+.container {
   color: rgb(153, 190, 223);
   font-family: sans-serif;
   /* overflow: hidden; */
 }
 
-#globalNavi {
+.globalNavi {
   border: solid #cccccc;
   border-width: 1px 0;
   padding: 10px 0;
 }
 
 /* 上のナビゲーションリンク */
-#globalNavi ul {
+.globalNavi ul {
   margin: 0;
 }
 /* clear fix */
-#globalNavi ul::after {
+.globalNavi ul::after {
   content: "";
   clear: both;
   display: block;
 }
 
-#globalNavi li {
+.globalNavi li {
   list-style-type: none;
   /* Bodyの幅を④等分 */
   width: 245px;
@@ -50,59 +50,52 @@ body {
   border-left: 1px solid #cccccc;
   padding: 0 10px;
 }
-#globalNavi li a:hover {
+.globalNavi li a:hover {
   background-color: #058ba9;
   opacity: 0.7;
 }
-#globalNavi li a.current {
+.globalNavi li a.current {
   background-color: #058ba9;
   opacity: 0.7;
 }
-#globalNavi ul li:first-child {
+.globalNavi ul li:first-child {
   border-left: none;
 }
 
-#globalNavi li a {
+.globalNavi li a {
   color: inherit;
   text-decoration: none;
   display: block;
   padding: 5px 0;
 }
 
-#page {
+.page {
   width: 980px;
   /* 中央寄せ */
   /* 左右にautoを指定することで左右のマージンをブラウザが自動で吸収する */
   margin: 0 auto;
 }
-#pageBody {
+.pageBody {
   margin-top: 30px;
 }
-#pageBody::after {
+.pageBody::after {
   content: "";
   clear: both;
   display: block;
 }
 
-#pageBodyMain {
+.pageBodyMain {
   width: 720px;
   /* 段組み:左寄せ */
   float: left;
 }
-#pageBodySub {
+.pageBodySub {
   width: 220px;
   /* 段組み:右寄せ */
   float: right;
 }
 
-p {
-  font-size: 14px;
-  /* 単位のない値: この値を要素のフォントサイズに掛けたものを使用する */
-  /* font-size ÷ 文字の高さ = line-heightの指定　が成り立つように */
-  /* ★重要：ブラウザによって表示を統一させたいときはline-heightの指定は必須。（デフォルトだとブラウザごとに結構差がある） */
-  line-height: 1.429;
-}
-#pageBodyMain .pageTitle {
+.pageBodyMain .pageTitle {
   font-size: 26px;
   background-color: #0a1f1d;
   padding: 5px 15px;
@@ -111,56 +104,56 @@ p {
   opacity: 0.7;
   border: 1px solid white;
 }
-#pageBodyMain .heading-typeA {
+.pageBodyMain .heading-typeA {
   font-size: 18px;
   color: #349fa6;
   border-bottom: 1px solid #349fa6;
   padding: 5px;
   line-height: 1.333;
 }
-#pageBodyMain .heading-typeB {
+.pageBodyMain .heading-typeB {
   font-size: 16px;
   border-left: 5px solid #e3e4d9;
   padding-left: 10px;
   line-height: 1.375;
 }
 
-#pageBodyMain .heading-typeC {
+.pageBodyMain .heading-typeC {
   font-size: 14px;
   line-height: 1.429;
 }
 
-#pageBodyMain .articleDetailHead {
+.pageBodyMain .articleDetailHead {
   border-bottom: 1px solid #cccccc;
   margin-bottom: 30px;
   padding-bottom: 15px;
 }
-#pageBodyMain .articleDetailFoot {
+.pageBodyMain .articleDetailFoot {
   border-top: 1px solid #cccccc;
   margin-top: 30px;
   padding-top: 15px;
 }
-#pageBodyMain .articleDetailBody section {
+.pageBodyMain .articleDetailBody section {
   margin-top: 30px;
 }
 
-#pageBodyMain .creditUnit {
+.pageBodyMain .creditUnit {
   padding: 10px;
   border: 1px solid #cccccc;
   line-height: 1.5;
 }
 
-#pageBodyMain .creditUnit p {
+.pageBodyMain .creditUnit p {
   font-size: 12px;
 }
 
-#pageBodyMain ul li {
+.pageBodyMain ul li {
   font-size: 14px;
   list-style-type: square;
   line-height: 1.429;
 }
 
-#pageBodyMain .articleDetailBody table {
+.pageBodyMain .articleDetailBody table {
   font-size: 14px;
   border: 1px solid #cccccc;
   border-collapse: collapse;
@@ -168,55 +161,55 @@ p {
   line-height: 1.429;
 }
 
-#pageBodyMain .articleDetailBody th,
-#pageBodyMain .articleDetailBody td {
+.pageBodyMain .articleDetailBody th,
+.pageBodyMain .articleDetailBody td {
   border: 1px solid #cccccc;
   padding: 5px 10px;
   text-align: left;
 }
-#pageBodyMain .articleDetailBody th {
+.pageBodyMain .articleDetailBody th {
   background-color: #153647;
   opacity: 0.7;
 }
 
-#pageBodyMain .articleDetailBody caption {
+.pageBodyMain .articleDetailBody caption {
   text-align: left;
   font-weight: bold;
   padding-left: 10px;
 }
 
-#pageBodyMain figure {
+.pageBodyMain figure {
   margin: 0;
 }
 
-#pageBodyMain figcaption {
+.pageBodyMain figcaption {
   font-size: 12px;
 }
 
-#pageHead #siteTitle {
+.pageHead .siteTitle {
   font-size: 30px;
   line-height: 1.2;
   text-shadow: #349fa6;
   font-family: "Antic Didone", serif;
 }
 
-#pageHead #catchcopy {
+.pageHead .catchcopy {
   font-size: 12px;
   line-height: 1.2;
 }
 
-#copyright small {
+.copyright small {
   font-size: 12px;
   line-height: 1.5;
 }
-#pageFoot {
+.pageFoot {
   margin-top: 15px;
   border-top: 1px solid #cccccc;
   /* floatクリア */
   clear: both;
 }
 
-#pageBodySub .newsList h2 {
+.pageBodySub .newsList h2 {
   font-size: 16px;
   line-height: 1.375;
   padding: 5px;
@@ -224,45 +217,33 @@ p {
   border-bottom: 1px solid #cccccc;
 }
 
-#pageBodySub .newsList ul {
+.pageBodySub .newsList ul {
   padding: 0;
 }
 
-#pageBodySub .newsList li {
+.pageBodySub .newsList li {
   list-style-type: none;
   padding: 10px 5px;
   line-height: 1.5;
   font-size: 12px;
 }
-#pageBodySub .newsList time {
+.pageBodySub .newsList time {
   display: block;
   font-weight: bold;
 }
 
-a {
-  color: #999999;
-}
-
-a:hover {
-  color: #999900;
-}
-
-#otherMakes {
+.otherMakes {
   margin-bottom: 16px;
 }
-#otherMakes ul {
+.otherMakes ul {
   margin-left: 21px;
 }
 
-#otherMakes li {
+.otherMakes li {
   font-size: 14px;
   line-height: 1.429;
   list-style-type: square;
   margin-bottom: 12px;
-}
-/* sanitize.cssを上書き */
-nav li {
-  list-style-type: initial;
 }
 
 .toPageTop {
@@ -434,29 +415,29 @@ nav li {
   line-height: 1.5;
   margin-bottom: 0;
 }
-#pageBody .news table {
+.pageBody .news table {
   min-width: 100%;
 }
 
-#pageBody .news table th,
-#pageBody .news table td {
+.pageBody .news table th,
+.pageBody .news table td {
   font-size: 14px;
   line-height: 1.429;
   padding: 10px;
   vertical-align: top;
 }
 
-#pageBody .news table th {
+.pageBody .news table th {
   white-space: nowrap;
   padding-right: 30px;
 }
-#pageBody .news table tr {
+.pageBody .news table tr {
   border-bottom: 1px dotted #cccccc;
 }
-#pageBody h2 {
+.pageBody h2 {
   padding-bottom: 0;
 }
-#myCanvas {
+.myCanvas {
   position: fixed;
   z-index: -1;
   background-color: #0a1f1d;
