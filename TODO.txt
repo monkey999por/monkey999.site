@@ -12,6 +12,10 @@ componentのファイルはindexでディレクトリとexport関数に名前を
 styles, hooks, typesはコンポーネント依存になると思うので各コンポーネントのディレクトリにおけばいいかな
 普通にひとつづつしかおかないはずなので、変に命名ルール決めて運用する方がコスト高いし
 共通のstyles, hooks, typesはutilsの下にそれぞれ置くか
-　
+
+
+templateとpagesで階層を合わせる必要はない
+・URLをどうしたいかをpagesで決めればいい
+・pagesはtemplateを一つしか読み込まない。
 
 

@@ -1,9 +1,9 @@
-html {
+.container {
   background-color: black;
   color: white;
 }
 
-input[type="text"]#command {
+input[type="text"].command {
   color: white;
   border: none;
   outline: none;
@@ -19,16 +19,4 @@ input[type="text"]#command {
 }
 .logs > div > p {
   margin: 0;
-}
-
-input[type="text"]#command:active {
-  /* color: white;
-  outline: none;
-  border: none;
-  background-color: black; */
-}
-
-.histories:hover {
-  /* background-color: gray;
-  transition-duration: 100ms; */
 }
