@@ -11,7 +11,7 @@ import OtherMakes from "@molecules/OtherMakes";
 import Console from "@templates/Console";
 import styles from "@utils/styles/component-test.module.scss";
 
-export default function componentTest() {
+export default function componentTest(): JSX.Element {
   return (
     <div className={styles.container}>
       <Link href={"/"}>←back to top</Link>
