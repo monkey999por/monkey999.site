@@ -4,6 +4,8 @@ import PageTemplate from "@templates/PageTemplate";
 import styles from "@utils/styles/komorikosha.module.scss";
 
 export default function komorikosha(): JSX.Element {
+  console.log(`render page komorikosha home`);
+
   return (
     <>
       <PageTemplate>

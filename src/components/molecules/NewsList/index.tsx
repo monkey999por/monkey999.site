@@ -4,6 +4,7 @@ import styles from "@utils/styles/komorikosha.module.scss";
  * サイドのニュースリストを追加
  */
 export default function NewsList(): JSX.Element {
+  console.log(`render component NewsList`);
   return (
     <section className={styles.newsList}>
       <h2>News</h2>

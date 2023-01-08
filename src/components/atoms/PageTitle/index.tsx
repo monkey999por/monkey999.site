@@ -7,6 +7,7 @@ import styles from "@utils/styles/komorikosha.module.scss";
  * add page title
  */
 export default function PageTitle(): JSX.Element {
+  console.log(`render component PageTitle`);
   const router = useRouter();
   return (
     <h1 className={styles.pageTitle}>{getPageInfo(router.asPath)?.title}</h1>

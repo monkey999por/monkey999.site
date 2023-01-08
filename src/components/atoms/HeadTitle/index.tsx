@@ -7,6 +7,7 @@ import { getPageInfo } from "@utils/functions/komorikoshaCommon";
  * ページのタイトル
  */
 export default function HeadTitle(): JSX.Element {
+  console.log(`render component HeadTitle`);
   const router = useRouter();
 
   return (

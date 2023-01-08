@@ -9,6 +9,7 @@ type Props = {
 };
 
 export default function Home() {
+  console.log(`render page Home`);
   return (
     <div className={styles.container}>
       <Head>
@@ -68,9 +69,9 @@ export default function Home() {
             <h2>component-test &rarr;</h2>
             <p>component-test sample</p>
           </Link>
-          <Link href='/dummy' className={styles.card}>
-            <h2>Dummy &rarr;</h2>
-            <p>dummy</p>
+          <Link href='/memo-test' className={styles.card}>
+            <h2>React Memo test &rarr;</h2>
+            <p>React.memo, useCallback, useMemo sample</p>
           </Link>
         </div>
       </main>

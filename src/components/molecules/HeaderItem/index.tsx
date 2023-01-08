@@ -4,10 +4,16 @@ import { globalNavilinks } from "@utils/constant";
 import { isRoot } from "@utils/functions/komorikoshaCommon";
 import styles from "@utils/styles/komorikosha.module.scss";
 
+export type Props = {
+  prefix: string;
+};
+
 /**
  * ヘッダのコンテンツを追加
  */
-export default function HeaderItem(): JSX.Element {
+export default function HeaderItem(props: Props): JSX.Element {
+  console.log(`■render component HeaderItem`);
+  const { prefix } = props;
   const router = useRouter();
   return (
     <>
@@ -26,7 +32,7 @@ export default function HeaderItem(): JSX.Element {
                 className={isRoot(router.asPath) ? styles.current : ""}
                 href={globalNavilinks.home}
               >
-                home
+                {`${prefix}home`}
               </a>
             </li>
 
@@ -39,7 +45,7 @@ export default function HeaderItem(): JSX.Element {
                 }
                 href={globalNavilinks.aboutMe}
               >
-                about me
+                {`${prefix}about me`}
               </a>
             </li>
             <li>
@@ -49,7 +55,7 @@ export default function HeaderItem(): JSX.Element {
                 }
                 href={globalNavilinks.portfolios}
               >
-                portfolios
+                {`${prefix}portfolios`}
               </a>
             </li>
             <li>
@@ -61,7 +67,7 @@ export default function HeaderItem(): JSX.Element {
                 }
                 href={globalNavilinks.contact}
               >
-                contact
+                {`${prefix}contact`}
               </a>
             </li>
           </ul>

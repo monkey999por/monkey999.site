@@ -5,9 +5,8 @@ import { useEffect, useRef, useState } from "react";
 import styles from "./console.module.scss";
 
 export default function Console(): JSX.Element {
+  console.log(`render component Console`);
   const router = useRouter();
-  console.log(router);
-  console.log("Console render");
 
   const [server, setServer] = useState("192.168.0.11");
   const [user, setUser] = useState("monkey999");

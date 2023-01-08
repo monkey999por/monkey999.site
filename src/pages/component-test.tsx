@@ -8,10 +8,10 @@ import Waku from "@atoms/Waku";
 import HeaderItem from "@molecules/HeaderItem";
 import NewsList from "@molecules/NewsList";
 import OtherMakes from "@molecules/OtherMakes";
-import Console from "@templates/Console";
 import styles from "@utils/styles/component-test.module.scss";
 
 export default function componentTest(): JSX.Element {
+  console.log(`render page componentTest`);
   return (
     <div className={styles.container}>
       <Link href={"/"}>←back to top</Link>
@@ -31,7 +31,7 @@ export default function componentTest(): JSX.Element {
         <PageTitle />
       </Waku>
       <Waku>
-        <HeaderItem />
+        <HeaderItem prefix='*' />
       </Waku>
       <Waku>
         <NewsList />
@@ -39,9 +39,12 @@ export default function componentTest(): JSX.Element {
       <Waku>
         <OtherMakes />
       </Waku>
-      <Waku>
+      {/* <Waku>
+        <PageTemplate />
+      </Waku> */}
+      {/* <Waku>
         <Console />
-      </Waku>
+      </Waku> */}
     </div>
   );
 }
