@@ -2,11 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
-import styles from "../utils/styles/Home.module.scss";
-type Props = {
-  value: string;
-  keys?: number[];
-};
+import styles from "@utils/styles/Home.module.scss";
 
 export default function Home() {
   console.log(`render page Home`);

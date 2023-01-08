@@ -1,0 +1,21 @@
+@charset 'UTF-8';
+
+$pc: 1024px; // PC
+$tab: 680px; // タブレット
+$sp: 480px; // スマホ
+
+@mixin pc {
+  @media screen and (max-width: ($pc)) {
+    @content;
+  }
+}
+@mixin tab {
+  @media screen and (max-width: ($tab)) {
+    @content;
+  }
+}
+@mixin sp {
+  @media screen and (max-width: ($sp)) {
+    @content;
+  }
+}
