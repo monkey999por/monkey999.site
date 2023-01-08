@@ -1,0 +1,27 @@
+@charset 'UTF-8';
+
+.container {
+  background-color: black;
+}
+
+.itemBlock {
+  margin: 0 10px 10px 10px;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 1em;
+}
+
+.itemBlock:first-child {
+  margin-top: 0;
+}
+
+.itemBlock:last-child {
+  margin-bottom: 0;
+}
+
+.componentName {
+  margin: 0 10px;
+  padding: 0 10px;
+  font-size: 1.3em;
+  color: aqua;
+}

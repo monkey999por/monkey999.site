@@ -48,7 +48,9 @@ export default function about() {
           <p className={styles.toPageTop}>
             <a href='#top'>set to top</a>
           </p>
-          <Copyright />
+          <footer className={styles.pageFoot}>
+            <Copyright />
+          </footer>
         </div>
       </div>
     </>

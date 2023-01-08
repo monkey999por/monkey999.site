@@ -115,7 +115,9 @@ export default function komorikosha(): JSX.Element {
           <p className={styles.toPageTop}>
             <a href='#top'>set to top</a>
           </p>
-          <Copyright />
+          <footer className={styles.pageFoot}>
+            <Copyright />
+          </footer>
         </div>
       </div>
     </>

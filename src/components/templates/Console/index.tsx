@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Router, useRouter } from "next/router";
+import { useRouter } from "next/router";
 import { useEffect, useRef, useState } from "react";
 
 import styles from "./console.module.scss";
@@ -54,7 +54,7 @@ export default function Console(): JSX.Element {
       name: "exit",
       func: () => {
         if (confirm("logout?")) {
-          Router.push("/");
+          router.push("/");
         }
         return "exit done";
       },

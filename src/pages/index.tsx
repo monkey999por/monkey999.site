@@ -64,6 +64,14 @@ export default function Home() {
             <h2>komorikosha &rarr;</h2>
             <p>komorikosha sample</p>
           </Link>
+          <Link href='/component-test' className={styles.card}>
+            <h2>component-test &rarr;</h2>
+            <p>component-test sample</p>
+          </Link>
+          <Link href='/dummy' className={styles.card}>
+            <h2>Dummy &rarr;</h2>
+            <p>dummy</p>
+          </Link>
         </div>
       </main>
 

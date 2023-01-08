@@ -63,7 +63,9 @@ export default function contact() {
         <p className={styles.toPageTop}>
           <a href='#top'>set to top</a>
         </p>
-        <Copyright />
+        <footer className={styles.pageFoot}>
+          <Copyright />
+        </footer>
       </div>
       {/* CreateJSのライブラリー読み込み */}
       {/* ParticleJSのライブラリー読み込み */}
