@@ -179,7 +179,7 @@ export default function Console(): JSX.Element {
               <>
                 <div className={styles.histories}>
                   <p>
-                    {server}@${user}$ {item.command}
+                    {user}@{server}$ {item.command}
                   </p>
                   <p>{item.result}</p>
                 </div>
@@ -188,8 +188,8 @@ export default function Console(): JSX.Element {
           </div>
 
           <div className={styles.input}>
-            <span className={styles.server}>{server}</span>@
-            <span className={styles.user}>{user}</span>$&nbsp;
+            <span className={styles.user}>{user}</span>@
+            <span className={styles.server}>{server}</span>$&nbsp;
             <input
               ref={inputElement}
               onKeyDown={(e) => {
