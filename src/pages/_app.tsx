@@ -1,6 +1,7 @@
 import { AppProps } from "next/app";
 import Head from "next/head";
 import "@utils/styles/globals.css";
+import Script from "next/script";
 
 const App = ({ Component, pageProps }: AppProps) => (
   <>
@@ -9,8 +10,8 @@ const App = ({ Component, pageProps }: AppProps) => (
       <link href=' https://unpkg.com/sanitize.css ' rel=' stylesheet ' />
     </Head>
     <Component {...pageProps} />
-    {/* <Script src='https://code.createjs.com/1.0.0/createjs.min.js' /> */}
-    {/* <Script src='https://cdn.rawgit.com/ics-creative/ParticleJS/release/1.0.0/libs/particlejs.min.js' /> */}
+    <Script src='https://code.createjs.com/1.0.0/createjs.min.js' />
+    <Script src='https://cdn.rawgit.com/ics-creative/ParticleJS/release/1.0.0/libs/particlejs.min.js' />
   </>
 );
 
