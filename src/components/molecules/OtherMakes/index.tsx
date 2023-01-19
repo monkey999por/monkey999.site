@@ -1,5 +1,6 @@
 import { globalNavilinks } from "@utils/constant";
-import styles from "@utils/styles/komorikosha.module.scss";
+
+import styles from "./OtherMakes.module.scss";
 
 /**
  * 他に作ったもののリンクを追加

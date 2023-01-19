@@ -1,4 +1,4 @@
-import styles from "@utils/styles/komorikosha.module.scss";
+import styles from "./NewsList.module.scss";
 
 /**
  * サイドのニュースリストを追加

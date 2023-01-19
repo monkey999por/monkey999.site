@@ -5,14 +5,13 @@
   padding: 10px;
   border: 1px solid #cccccc;
   border-radius: 1em;
-}
 
-.itemBlock:first-child {
-  margin-top: 0;
-}
-
-.itemBlock:last-child {
-  margin-bottom: 0;
+  &:first-child {
+    margin-top: 0;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .componentName {

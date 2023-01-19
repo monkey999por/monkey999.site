@@ -1,3 +1,5 @@
+@use "sass:meta";
+
 $color_1: #85c728;
 $color_2: inherit;
 $font-family_1: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
@@ -145,6 +147,7 @@ $sp: 480px; // スマホ
 
 @mixin pc {
   @media screen and (max-width: ($pc)) {
+    @debug meta.content-exists();
     @content;
   }
 }
@@ -158,6 +161,7 @@ $sp: 480px; // スマホ
     @content;
   }
 }
+b
 
 // responsive test
 .title {

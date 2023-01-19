@@ -2,7 +2,7 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import { useEffect, useRef, useState } from "react";
 
-import styles from "./console.module.scss";
+import styles from "./Console.module.scss";
 
 export default function Console(): JSX.Element {
   console.log(`render component Console`);

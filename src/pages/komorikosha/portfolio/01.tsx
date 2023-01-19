@@ -1,7 +1,7 @@
 import PageTitle from "@atoms/PageTitle";
 import NewsList from "@molecules/NewsList";
 import OtherMakes from "@molecules/OtherMakes";
-import PageTemplate from "@templates/PageTemplate";
+import PageTemplate from "@organisms/PageTemplate";
 import styles from "@utils/styles/komorikosha.module.scss";
 
 export default function portfolio01(): JSX.Element {

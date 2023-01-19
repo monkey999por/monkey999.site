@@ -2,7 +2,8 @@ import { useRouter } from "next/router";
 
 import { globalNavilinks } from "@utils/constant";
 import { isRoot } from "@utils/functions/komorikoshaCommon";
-import styles from "@utils/styles/komorikosha.module.scss";
+
+import styles from "./HeaderItem.module.scss";
 
 export type Props = {
   prefix: string;
@@ -17,7 +18,7 @@ export default function HeaderItem(props: Props): JSX.Element {
   const router = useRouter();
   return (
     <>
-      <div className={styles.headerItem}>
+      <>
         <header className={styles.pageHead}>
           <h1 className={styles.siteTitle}>komorikomasha</h1>
           <p className={styles.catchcopy}>
@@ -72,7 +73,7 @@ export default function HeaderItem(props: Props): JSX.Element {
             </li>
           </ul>
         </nav>
-      </div>
+      </>
     </>
   );
 }

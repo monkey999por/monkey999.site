@@ -1,5 +1,4 @@
-import { memo, useState } from "react";
-import React from "react";
+import { memo } from "react";
 
 import Copyright from "@atoms/Copyright";
 import HeadTitle from "@atoms/HeadTitle";
@@ -15,13 +14,14 @@ export default function PageTemplate(props: any): JSX.Element {
   const HeaderItemMemo = memo<Props>(({ prefix }) => {
     return <HeaderItem prefix={prefix} />;
   });
-  HeaderItemMemo.displayName = "HeaderItem";
+  HeaderItemMemo.displayName = "HeaderItemMemo";
 
-  const SampleHeadMemo = React.memo((props) => {
+  // ESLint Error: Component definition is missing display name
+  // https://qiita.com/acro5piano/items/1cffa8c6b52a36e6bb73
+  const SampleHeadMemo = memo(function SampleHeadMemo() {
     return <SampleHead />;
   });
 
-  const [prefix, setPrefix] = useState("・");
   return (
     <>
       <div className={styles.container}>
@@ -30,15 +30,7 @@ export default function PageTemplate(props: any): JSX.Element {
         {/* <SampleHead /> */}
         <SampleHeadMemo />
         <div className={styles.page}>
-          <HeaderItemMemo prefix={prefix} />
-          トピックパスのプレフィックス
-          <input
-            className={styles.input_test}
-            type='text'
-            onChange={(e) => {
-              setPrefix(e.target.value);
-            }}
-          />
+          <HeaderItemMemo prefix='' />
           <TopicPath />
           {/* main content */}
           {props.children}

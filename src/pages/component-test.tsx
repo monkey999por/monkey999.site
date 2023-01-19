@@ -8,6 +8,7 @@ import Waku from "@atoms/Waku";
 import HeaderItem from "@molecules/HeaderItem";
 import NewsList from "@molecules/NewsList";
 import OtherMakes from "@molecules/OtherMakes";
+import PageTemplate from "@organisms/PageTemplate";
 import styles from "@utils/styles/component-test.module.scss";
 
 export default function componentTest(): JSX.Element {
@@ -38,6 +39,9 @@ export default function componentTest(): JSX.Element {
       </Waku>
       <Waku>
         <OtherMakes />
+      </Waku>
+      <Waku>
+        <PageTemplate />
       </Waku>
       {/* <Waku>
         <PageTemplate />

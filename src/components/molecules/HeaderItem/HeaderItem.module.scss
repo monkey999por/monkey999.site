@@ -1,0 +1,67 @@
+.globalNavi {
+  border: solid #cccccc;
+  border-width: 1px 0;
+  padding: 10px 0;
+
+  ul {
+    margin: 0;
+
+    /* clear fix */
+    &::after {
+      content: "";
+      clear: both;
+      display: block;
+    }
+
+    li {
+      &:first-child {
+        border-left: none;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+        display: block;
+        padding: 5px 0;
+      }
+    }
+  }
+
+  li {
+    list-style-type: none;
+    /* Bodyの幅を④等分 */
+    width: 245px;
+    /* ★これでリストの横並びができる */
+    float: left;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.429;
+    border-left: 1px solid #cccccc;
+    padding: 0 10px;
+
+    a {
+      &:hover {
+        background-color: #058ba9;
+        opacity: 0.7;
+      }
+      &.current {
+        background-color: #058ba9;
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+.pageHead {
+  .siteTitle {
+    font-size: 30px;
+    line-height: 1.2;
+    text-shadow: #349fa6;
+    font-family: "Antic Didone", serif;
+  }
+
+  .catchcopy {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+}

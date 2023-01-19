@@ -15,7 +15,7 @@ a:hover {
 }
 /* sanitize.cssを上書き */
 nav li {
-  /* list-style-type: initial; */
+  list-style-type: initial;
 }
 * {
   box-sizing: border-box;

@@ -1,0 +1,21 @@
+/* dummy */
+.sampleHead {
+  background: #333;
+  padding: 10px;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  .sampleHead_h1 {
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.375;
+    text-align: center;
+  }
+  .sampleHead_link {
+    position: absolute;
+    float: left;
+    left: 20px;
+  }
+}

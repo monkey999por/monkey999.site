@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import PageTemplate from "@templates/PageTemplate";
+import PageTemplate from "@organisms/PageTemplate";
 import styles from "@utils/styles/komorikosha.module.scss";
 
 export default function komorikosha(): JSX.Element {
@@ -99,10 +99,7 @@ export default function komorikosha(): JSX.Element {
               </tbody>
             </table>
           </section>
-          <div className={styles.pageBodySub}>
-            {/* <OtherMakes /> */}
-            {/* <NewsList /> */}
-          </div>
+          <div className={styles.pageBodySub} />
         </div>
       </PageTemplate>
     </>

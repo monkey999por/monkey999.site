@@ -1,7 +1,7 @@
 
 
 @エイリアスの作成
-"@test/*": ["components/test/*"]
+.tsconfigに"@test/*": ["components/test/*"]
 
 
 ファイル名はpages意外は基本大文字で

@@ -1,7 +1,8 @@
 import { useRouter } from "next/router";
 
 import { getPageInfo } from "@utils/functions/komorikoshaCommon";
-import styles from "@utils/styles/komorikosha.module.scss";
+
+import styles from "./PageTitle.module.scss";
 
 /**
  * add page title
