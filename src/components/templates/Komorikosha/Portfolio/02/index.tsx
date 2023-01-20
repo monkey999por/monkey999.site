@@ -22,7 +22,7 @@ export default function Portfolio02(): JSX.Element {
             </header>
             <section className={styles.articleDetailBody}>
               <section>
-                <h2 className='heading-typeA'>
+                <h2 className={styles["heading-typeA"]}>
                   Practical guide for web production workflow
                 </h2>
                 <p>
@@ -60,7 +60,7 @@ export default function Portfolio02(): JSX.Element {
                 </table>
               </section>
               <section>
-                <h3 className='heading-typeB'>
+                <h3 className={styles["heading-typeB"]}>
                   For those who want to build up the basics of WordPress
                   properly
                 </h3>
@@ -78,7 +78,7 @@ export default function Portfolio02(): JSX.Element {
                 <img src='/images/portfolio/img_02_02.jpg' alt='no content' />
               </section>
               <section>
-                <h3 className='heading-typeB'>
+                <h3 className={styles["heading-typeB"]}>
                   I want my web designer girl to read it
                 </h3>
                 <p>
@@ -93,7 +93,7 @@ export default function Portfolio02(): JSX.Element {
             </section>
             <footer className={styles.articleDetailFoot}>
               <section>
-                <h2 className='heading-typeC'>relation link(h2)</h2>
+                <h2 className={styles["heading-typeC"]}>relation link(h2)</h2>
                 <ul>
                   <li>
                     <a href='ok'>
@@ -126,7 +126,7 @@ export default function Portfolio02(): JSX.Element {
               </section>
               <aside className={styles.creditUnit}>
                 <p>shooting cooperation</p>
-                <h2 className='heading-typeC'>nino</h2>
+                <h2 className={styles["heading-typeC"]}>nino</h2>
                 <p>
                   Sapporo-shi Toyohira-ku Tsukisamuhigashi 2-jo 6-chome 1-17
                 </p>

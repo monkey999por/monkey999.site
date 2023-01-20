@@ -1,3 +1,4 @@
+import ContactButton from "@atoms/ContactButton";
 import PageTitle from "@atoms/PageTitle";
 import NewsList from "@molecules/NewsList";
 import PageTemplate from "@organisms/PageTemplate";
@@ -16,31 +17,29 @@ export default function Contact() {
               contact form.
               <br />
             </p>
-            <div className={styles.contactButton}>
-              <p>contact formbotton</p>
-            </div>
+            <ContactButton />
             <div className={styles.border} />
             <h3 className='heading-typeB'>Comomo (Tomoyo Takahashi)</h3>
             <ul>
-              <li>
+              <li className={styles.profileItem}>
                 Blog <a href='d'>http://cat-speak.net</a>
               </li>
-              <li>
+              <li className={styles.profileItem}>
                 twitter <a href='dd'>@komomoaichi</a>
               </li>
             </ul>
             <h3 className='heading-typeB'>Moriko (Chikako Mori)</h3>
             <ul>
-              <li>
+              <li className={styles.profileItem}>
                 ブログ <a href='ss'>http://mori-ko.tumblr.com/</a>
               </li>
-              <li>
+              <li className={styles.profileItem}>
                 twitter <a href='sss'>@mori_ko</a>
               </li>
             </ul>
             <h3 className='heading-typeB'>Hiroshima (Hiromasa Tanaka)</h3>
             <ul>
-              <li>
+              <li className={styles.profileItem}>
                 ブログ <a href='ss'>http://another.maple4ever.net/</a>
               </li>
             </ul>

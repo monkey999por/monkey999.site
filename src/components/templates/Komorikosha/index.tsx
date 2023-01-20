@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import PageTemplate from "@organisms/PageTemplate";
+// import styles from "@utils/styles/PortfolioHome.module.scss";
 
 import styles from "./Komorikosha.module.scss";
 
@@ -75,6 +76,7 @@ export default function Komorikosha(): JSX.Element {
               </p>
             </article>
           </div>
+          {/* TODO これはgetStaticPropsで値撮るようにしたいね */}
           <section className={styles.news}>
             <h2>News</h2>
             <table>

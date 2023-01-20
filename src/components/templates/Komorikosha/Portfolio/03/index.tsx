@@ -22,7 +22,7 @@ export default function Portfolio03(): JSX.Element {
             </header>
             <section className={styles.articleDetailBody}>
               <section>
-                <h2 className='heading-typeA'>
+                <h2 className={styles["heading-typeA"]}>
                   The password is to become a grasshopper!
                 </h2>
                 <p>
@@ -47,7 +47,7 @@ export default function Portfolio03(): JSX.Element {
                 </table>
               </section>
               <section>
-                <h3 className='heading-typeB'>
+                <h3 className={styles["heading-typeB"]}>
                   Web-based picture book using parallax effect
                 </h3>
                 <p>
@@ -60,7 +60,7 @@ export default function Portfolio03(): JSX.Element {
             </section>
             <footer className={styles.articleDetailFoot}>
               <section>
-                <h2 className='heading-typeC'>relation link</h2>
+                <h2 className={styles["heading-typeC"]}>relation link</h2>
                 <ul>
                   <li>
                     <a href='ok'> Wizard who wants to be a grasshopper</a>

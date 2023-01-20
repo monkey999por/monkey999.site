@@ -23,7 +23,7 @@ export default function Portfolio01(): JSX.Element {
             </header>
             <section className={styles.articleDetailBody}>
               <section>
-                <h2 className='heading-typeA'>
+                <h2 className={styles["heading-typeA"]}>
                   A cafe site theme that you can start right now!
                 </h2>
                 <p>
@@ -67,7 +67,7 @@ export default function Portfolio01(): JSX.Element {
                 </table>
               </section>
               <section>
-                <h3 className='heading-typeB'>
+                <h3 className={styles["heading-typeB"]}>
                   Link with Instagram via plug-in
                 </h3>
                 <figure>
@@ -82,7 +82,7 @@ export default function Portfolio01(): JSX.Element {
                 </p>
               </section>
               <section>
-                <h3 className='heading-typeB'>
+                <h3 className={styles["heading-typeB"]}>
                   Responsive design for comfortable viewing on smartphones and
                   tablets
                 </h3>
@@ -107,7 +107,7 @@ export default function Portfolio01(): JSX.Element {
                 </figure>
               </section>
               <section>
-                <h3 className='heading-typeB'>
+                <h3 className={styles["heading-typeB"]}>
                   Because it is a web font, decorative characters and icons are
                   also beautiful.
                 </h3>
@@ -121,7 +121,7 @@ export default function Portfolio01(): JSX.Element {
             </section>
             <footer className={styles.articleDetailFoot}>
               <section>
-                <h2 className='heading-typeC'>relation link</h2>
+                <h2 className={styles["heading-typeC"]}>relation link</h2>
                 <ul>
                   <li>
                     <a href='ok'> Download page Debut</a>
@@ -139,7 +139,7 @@ export default function Portfolio01(): JSX.Element {
               </section>
               <aside className={styles.creditUnit}>
                 <p>shooting cooperation</p>
-                <h2 className='heading-typeC'>Kitchen nest</h2>
+                <h2 className={styles["heading-typeC"]}>Kitchen nest</h2>
                 <p>
                   Hokkaido Sapporo City Chuo Ward Minami 3 West 8 Chome Taiyo
                   Building 2F
