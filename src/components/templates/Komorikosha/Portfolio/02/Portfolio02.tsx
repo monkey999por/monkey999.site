@@ -1,7 +1,7 @@
-import PageTitle from "@atoms/PageTitle";
-import NewsList from "@molecules/NewsList";
-import OtherMakes from "@molecules/OtherMakes";
-import PageTemplate from "@organisms/PageTemplate";
+import PageTitle from "@atoms/PageTitle/PageTitle";
+import NewsList from "@molecules/NewsList/NewsList";
+import OtherMakes from "@molecules/OtherMakes/OtherMakes";
+import PageTemplate from "@organisms/PageTemplate/PageTemplate";
 
 import styles from "./Portfolio02.module.scss";
 

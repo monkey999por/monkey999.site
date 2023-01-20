@@ -1,23 +1,20 @@
 import { memo } from "react";
 
-import Copyright from "@atoms/Copyright";
-import HeadTitle from "@atoms/HeadTitle";
-import SampleHead from "@atoms/SampleHead";
-import TopicPath from "@atoms/TopicPath";
-import HeaderItem, { Props } from "@molecules/HeaderItem";
+import Copyright from "@atoms/Copyright/Copyright";
+import HeadTitle from "@atoms/HeadTitle/HeadTitle";
+import SampleHead from "@atoms/SampleHead/SampleHead";
+import TopicPath from "@atoms/TopicPath/TopicPath";
+import HeaderItem, { Props } from "@molecules/HeaderItem/HeaderItem";
 
 import styles from "./PageTemplate.module.scss";
 
 export default function PageTemplate(props: any): JSX.Element {
   console.log(`render component PageTemplate`);
 
-  const HeaderItemMemo = memo<Props>(({ prefix }) => {
+  const HeaderItemMemo = memo<Props>(function HeaderItemMemo({ prefix }) {
     return <HeaderItem prefix={prefix} />;
   });
-  HeaderItemMemo.displayName = "HeaderItemMemo";
 
-  // ESLint Error: Component definition is missing display name
-  // https://qiita.com/acro5piano/items/1cffa8c6b52a36e6bb73
   const SampleHeadMemo = memo(function SampleHeadMemo() {
     return <SampleHead />;
   });

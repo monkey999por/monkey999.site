@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import PageTemplate from "@organisms/PageTemplate";
+import PageTemplate from "@organisms/PageTemplate/PageTemplate";
 // import styles from "@utils/styles/PortfolioHome.module.scss";
 
 import styles from "./Komorikosha.module.scss";
