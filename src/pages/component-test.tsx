@@ -1,14 +1,14 @@
 import Link from "next/link";
 
-import Copyright from "@atoms/Copyright";
-import PageTitle from "@atoms/PageTitle";
-import SampleHead from "@atoms/SampleHead";
-import TopicPath from "@atoms/TopicPath";
-import Waku from "@atoms/Waku";
-import HeaderItem from "@molecules/HeaderItem";
-import NewsList from "@molecules/NewsList";
-import OtherMakes from "@molecules/OtherMakes";
-import PageTemplate from "@organisms/PageTemplate";
+import Copyright from "@atoms/Copyright/Copyright";
+import PageTitle from "@atoms/PageTitle/PageTitle";
+import SampleHead from "@atoms/SampleHead/SampleHead";
+import TopicPath from "@atoms/TopicPath/TopicPath";
+import Waku from "@atoms/Waku/Waku";
+import HeaderItem from "@molecules/HeaderItem/HeaderItem";
+import NewsList from "@molecules/NewsList/NewsList";
+import OtherMakes from "@molecules/OtherMakes/OtherMakes";
+import PageTemplate from "@organisms/PageTemplate/PageTemplate";
 import styles from "@utils/styles/component-test.module.scss";
 
 export default function componentTest(): JSX.Element {

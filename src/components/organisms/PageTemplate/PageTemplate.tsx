@@ -4,14 +4,22 @@ import Copyright from "@atoms/Copyright/Copyright";
 import HeadTitle from "@atoms/HeadTitle/HeadTitle";
 import SampleHead from "@atoms/SampleHead/SampleHead";
 import TopicPath from "@atoms/TopicPath/TopicPath";
-import HeaderItem, { Props } from "@molecules/HeaderItem/HeaderItem";
+import HeaderItem, {
+  Props as HeaderItemProps,
+} from "@molecules/HeaderItem/HeaderItem";
+import { HasChildren } from "@utils/types/PropsUtilType";
 
 import styles from "./PageTemplate.module.scss";
 
-export default function PageTemplate(props: any): JSX.Element {
-  console.log(`render component PageTemplate`);
+type Props = HasChildren;
 
-  const HeaderItemMemo = memo<Props>(function HeaderItemMemo({ prefix }) {
+export default function PageTemplate(props: Props): JSX.Element {
+  console.log(`render component PageTemplate`);
+  console.log(props);
+
+  const HeaderItemMemo = memo<HeaderItemProps>(function HeaderItemMemo({
+    prefix,
+  }) {
     return <HeaderItem prefix={prefix} />;
   });
 

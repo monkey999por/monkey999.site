@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
 import { useEffect, useRef, useState } from "react";
+import { KeyboardEvent } from "react";
 
 import styles from "./Console.module.scss";
 
@@ -74,7 +75,7 @@ export default function Console(): JSX.Element {
     window.scroll(0, bottom);
   }, [commandHistory]);
 
-  const handleInputKeyDown = (e: any): void => {
+  const handleInputKeyDown = (e: KeyboardEvent<HTMLInputElement>): void => {
     // 上押下
     console.log(e.key);
 
@@ -191,9 +192,7 @@ export default function Console(): JSX.Element {
             <span className={styles.server}>{server}</span>$&nbsp;
             <input
               ref={inputElement}
-              onKeyDown={(e) => {
-                handleInputKeyDown(e);
-              }}
+              onKeyDown={(e) => handleInputKeyDown(e)}
               onBlur={() => {
                 inputElement.current?.focus();
               }}
