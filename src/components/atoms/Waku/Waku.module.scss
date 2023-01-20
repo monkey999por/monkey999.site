@@ -5,6 +5,8 @@
   padding: 10px;
   border: 1px solid #cccccc;
   border-radius: 1em;
+  max-width: 100%;
+  overflow: hidden;
 
   &:first-child {
     margin-top: 0;
