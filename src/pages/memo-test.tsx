@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import React, { memo, useState } from "react";
 
-import ChildHasProps from "@atoms/MemoSamle/ChildHasProps";
+import ChildHasProps, {
+  Props as ChildHasPropsProps,
+} from "@atoms/MemoSamle/ChildHasProps";
 import ChildNoProps from "@atoms/MemoSamle/ChildNoProps";
 
 // const Child = (props) => {
@@ -8,18 +10,22 @@ import ChildNoProps from "@atoms/MemoSamle/ChildNoProps";
 //   return <p style={{ color: "black;" }}>Child: {props.count}</p>;
 // };  ↓
 
-const InnerChildMemo = React.memo((props) => {
+const InnerChildMemo = memo(function InnerChildMemo(props: { count: number }) {
   console.log("render InnerChild");
   return <p style={{ color: "black;" }}>Child: {props.count}</p>;
 });
 
-const ChildHasPropsMemo = React.memo((props) => {
+const ChildHasPropsMemo = memo(function ChildHasPropsMemo(
+  props: ChildHasPropsProps
+) {
   return <ChildHasProps count={props.count} />;
 });
 
-const ChildNoPropsMemo = React.memo((props) => <ChildNoProps />);
+const ChildNoPropsMemo = memo(function ChildNoPropsMemo() {
+  return <ChildNoProps />;
+});
 
-export default function MemoTest() {
+export default function MemoTest(): JSX.Element {
   console.log("render App");
   const [count1, setCount1] = useState(0);
   const [count2, setCount2] = useState(0);
@@ -31,6 +37,7 @@ export default function MemoTest() {
       <p style={{ color: "black;" }}>App: {count1}</p>
       <InnerChildMemo count={count2} />
       <ChildHasPropsMemo count={count2} />
+      <ChildHasProps count={count2} />
       {/* <ChildNoProps /> */}
       <ChildNoPropsMemo />
     </>
