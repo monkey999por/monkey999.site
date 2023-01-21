@@ -1,6 +1,6 @@
 import { AppProps } from "next/app";
 import Head from "next/head";
-import "@utils/styles/globals.css";
+import "@styles/globals.css";
 import Script from "next/script";
 
 const App = ({ Component, pageProps }: AppProps) => (

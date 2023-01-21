@@ -1,0 +1,41 @@
+.waku {
+  background-color: #333;
+  .flexbox {
+    display: flex;
+    flex-flow: row wrap;
+    a {
+      text-decoration: none;
+    }
+    .item {
+      color: initial;
+      text-decoration: none;
+      padding: 0.5em 1.5em;
+      margin-left: 30px;
+      margin-top: 1em;
+      max-width: 15em;
+      min-width: 15em;
+      border: 2px solid green;
+      font-weight: bold;
+      border-radius: 1em;
+      background-color: yellowgreen;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      text-align: center;
+
+      &::after {
+        content: " ⤴";
+      }
+      &:hover {
+        background-color: rgb(34, 167, 96);
+        // opacity: 0.7;
+      }
+    }
+  }
+  .footer {
+    position: absolute;
+
+    border-top: 1px solid #eaeaea;
+  }
+}
