@@ -5,6 +5,11 @@
   margin: 0;
   overflow: hidden;
   position: relative;
+
+  .sampleHead_link {
+    float: left;
+    padding-left: 20px;
+  }
   .sampleHead_h1 {
     padding: 0;
     margin: 0;
@@ -13,9 +18,9 @@
     line-height: 1.375;
     text-align: center;
   }
-  .sampleHead_link {
-    position: absolute;
-    float: left;
-    left: 20px;
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
   }
 }

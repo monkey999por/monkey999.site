@@ -12,7 +12,7 @@ export default function HeadTitle(): JSX.Element {
 
   return (
     <Head>
-      <title>{getPageInfo(router.asPath).title}</title>
+      <title>&quot;React&quot;:{getPageInfo(router.asPath).title}</title>
     </Head>
   );
 }

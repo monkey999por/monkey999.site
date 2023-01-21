@@ -5,7 +5,7 @@ import NewsList from "@molecules/NewsList/NewsList";
 import OtherMakes from "@molecules/OtherMakes/OtherMakes";
 import PageTemplate from "@organisms/PageTemplate/PageTemplate";
 
-import styles from "./PortfolioHome.module.scss";
+import styles from "./Portfolio.module.scss";
 
 export default function Portfolio(): JSX.Element {
   return (
@@ -17,18 +17,19 @@ export default function Portfolio(): JSX.Element {
             <article className={styles.articleList}>
               <a href='portfolio/03'>
                 <div className={styles.articleListText}>
-                  <h1>Wizard who wants to be a grasshopper</h1>
-                  <p className='text-overflow-lines'>
+                  <h1 className={styles.title}>
+                    Wizard who wants to be a grasshopper
+                  </h1>
+                  <p className={styles.synopsis}>
                     Web-based picture book by Comomo Hiroshima <br />
                     The password is to become a grasshopper!
                   </p>
                 </div>
-                <div className={`${styles.div} ${styles.articleImage}`}>
+                <div className={styles.articleListImage}>
                   <Image
                     src='/images/portfolio/index_03.jpg'
                     alt='no content'
-                    width={300}
-                    height={163}
+                    fill
                   />
                 </div>
               </a>
@@ -36,18 +37,17 @@ export default function Portfolio(): JSX.Element {
             <article className={styles.articleList}>
               <a href='portfolio/02'>
                 <div className={styles.articleListText}>
-                  <h1>WordPress design workbook</h1>
-                  <p className='text-overflow-lines'>
-                    A book for those who want to create a full-fledged website
-                    with WordPress, co-authored by Komomo and Hiromasa
+                  <h1 className={styles.title}>WordPress design workbook</h1>
+                  <p className={styles.synopsis}>
+                    A book for those who want to create a full-fledged
+                    websitewith WordPress, co-authored by Komomo and Hiromasa
                   </p>
                 </div>
                 <div className={styles.articleListImage}>
                   <Image
                     src='/images/portfolio/index_02.jpg'
                     alt='no content'
-                    width={300}
-                    height={163}
+                    fill
                   />
                 </div>
               </a>
@@ -55,8 +55,8 @@ export default function Portfolio(): JSX.Element {
             <article className={styles.articleList}>
               <a href='portfolio/01'>
                 <div className={styles.articleListText}>
-                  <h1>Cafe Debut</h1>
-                  <p className='text-overflow-lines'>
+                  <h1 className={styles.title}>Cafe Debut</h1>
+                  <p className={styles.synopsis}>
                     Generic theme for cafe site of baserCMS
                     <br />
                     Theme Contest 2012 Restaurant Theme Award Winner
@@ -66,8 +66,7 @@ export default function Portfolio(): JSX.Element {
                   <Image
                     src='/images/portfolio/index_01.jpg'
                     alt='no content'
-                    width={300}
-                    height={163}
+                    fill
                   />
                 </div>
               </a>

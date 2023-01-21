@@ -1,3 +1,5 @@
+@use "../../../utils/styles/Responsive.scss" as responsive;
+
 .pageBody {
   margin-top: 30px;
 }
@@ -7,33 +9,36 @@
   /* 絶対一の基準を変更 */
   position: relative;
   margin-bottom: 40px;
-  img {
-    vertical-align: bottom;
-  }
-}
-
-.mainVisualText {
-  color: white;
-  background-color: rgba(0, 0, 0, 0.4);
-  width: 400px;
-  padding: 15px 25px;
-  box-sizing: border-box;
-
-  /* 配置① */
-  position: absolute;
-  left: 50px;
-  bottom: 50px;
-
-  h1 {
-    font-size: 26px;
-    line-height: 1.231;
-    margin: 0;
+  .imageWrap {
+    position: relative;
+    width: 980px;
+    height: 500px;
+    z-index: -1;
   }
 
-  p {
-    font-size: 12px;
-    line-height: 1.5;
-    margin-bottom: 0;
+  .mainVisualText {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 400px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+
+    /* 配置① */
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+
+    .title {
+      font-size: 26px;
+      line-height: 1.231;
+      margin: 0;
+    }
+
+    .synopsis {
+      font-size: 12px;
+      line-height: 1.5;
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -68,6 +73,11 @@
     line-height: 1.5;
     margin-bottom: 0;
   }
+  .imageWrap {
+    position: relative;
+    width: 300px;
+    height: 163px;
+  }
 }
 
 @mixin th-td {
@@ -89,6 +99,9 @@
 
     td {
       @include th-td;
+      // @include responsive.sp {
+      //   color: red;
+      // }
     }
 
     tr {

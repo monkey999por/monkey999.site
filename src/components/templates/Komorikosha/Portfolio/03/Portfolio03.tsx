@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import PageTitle from "@atoms/PageTitle/PageTitle";
 import NewsList from "@molecules/NewsList/NewsList";
 import OtherMakes from "@molecules/OtherMakes/OtherMakes";
@@ -13,7 +15,13 @@ export default function Portfolio03(): JSX.Element {
           <article className={styles.articleDetail}>
             <header className={styles.articleDetailHead}>
               <PageTitle />
-              <img src='/images/portfolio/img_03_01.jpg' alt='no content' />
+              <div className={styles.imageWrap}>
+                <Image
+                  src='/images/portfolio/img_03_01.jpg'
+                  alt='no content'
+                  fill
+                />
+              </div>
               <p>
                 Web-based picture book
                 <br />
@@ -55,7 +63,13 @@ export default function Portfolio03(): JSX.Element {
                   the first time. I explain how to make it on my blog, so if you
                   are interested, please see this article .
                 </p>
-                <img src='/images/portfolio/img_03_02.jpg' alt='no content' />
+                <div className={styles.imageWrap}>
+                  <Image
+                    src='/images/portfolio/img_03_02.jpg'
+                    alt='no content'
+                    fill
+                  />
+                </div>
               </section>
             </section>
             <footer className={styles.articleDetailFoot}>

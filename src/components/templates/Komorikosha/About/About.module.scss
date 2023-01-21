@@ -21,10 +21,21 @@
 }
 
 .imageContiner {
-  text-align: center;
   border-bottom: 1px dotted #cccccc;
   padding-bottom: 30px;
   margin: 30px 0;
+  object-fit: contain;
+  position: relative;
+  .imageWrap {
+    position: relative;
+    width: 200px;
+    height: 250px;
+    margin: 0 auto;
+    // @media screen and (max-width: 390px) {
+    //   width: 150px;
+    //   height: 280px;
+    // }
+  }
 }
 
 .articleDetail .border {

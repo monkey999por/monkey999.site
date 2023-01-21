@@ -7,9 +7,6 @@ $font-family_1: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono
 $border-color_1: #0070f3;
 $border-color_2: rgb(103, 39, 39);
 
-// TODO：別ファイルからってできない？
-// @use "../styles/Responsive.module.scss";
-
 .container {
   padding: 0 2rem;
   background: black;
@@ -112,8 +109,12 @@ $border-color_2: rgb(103, 39, 39);
   }
 }
 .logo {
-  height: 1em;
   margin-left: 0.5rem;
+  .imageWrap {
+    position: relative;
+    width: 72px;
+    height: 16px;
+  }
 }
 @media (max-width: 600px) {
   .grid {
@@ -138,40 +139,5 @@ $border-color_2: rgb(103, 39, 39);
     img {
       filter: invert(1);
     }
-  }
-}
-
-$pc: 1024px; // PC
-$tab: 680px; // タブレット
-$sp: 480px; // スマホ
-
-@mixin pc {
-  @media screen and (max-width: ($pc)) {
-    @debug meta.content-exists();
-    @content;
-  }
-}
-@mixin tab {
-  @media screen and (max-width: ($tab)) {
-    @content;
-  }
-}
-@mixin sp {
-  @media screen and (max-width: ($sp)) {
-    @content;
-  }
-}
-b
-
-// responsive test
-.title {
-  @include pc {
-    color: red;
-  }
-  @include tab {
-    color: blue;
-  }
-  @include sp {
-    color: yellow;
   }
 }

@@ -69,6 +69,10 @@ export default function Home() {
             <h2>React Memo test &rarr;</h2>
             <p>React.memo, useCallback, useMemo sample</p>
           </Link>
+          <Link href='/samples' className={styles.card}>
+            <h2>CSS Workout &rarr;</h2>
+            <p>CSSで適当に作ってるサンプルのデザイン</p>
+          </Link>
         </div>
       </main>
 
@@ -80,7 +84,9 @@ export default function Home() {
         >
           Powered by{" "}
           <span className={styles.logo}>
-            <Image src='/vercel.svg' alt='Vercel Logo' width={72} height={16} />
+            <div className={styles.imageWrap}>
+              <Image src='/vercel.svg' alt='Vercel Logo' fill />
+            </div>
           </span>
         </a>
       </footer>

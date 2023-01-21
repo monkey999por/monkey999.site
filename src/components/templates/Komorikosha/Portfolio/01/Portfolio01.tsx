@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import PageTitle from "@atoms/PageTitle/PageTitle";
 import NewsList from "@molecules/NewsList/NewsList";
 import OtherMakes from "@molecules/OtherMakes/OtherMakes";
@@ -13,7 +15,13 @@ export default function Portfolio01(): JSX.Element {
           <article className={styles.articleDetail}>
             <header className={styles.articleDetailHead}>
               <PageTitle />
-              <img src='/images/portfolio/img_01_01.jpg' alt='no content' />
+              <div className={styles.imageWrap}>
+                <Image
+                  src='/images/portfolio/img_01_01.jpg'
+                  alt='no content'
+                  fill
+                />
+              </div>
               <p>
                 baser CMS Cafe site theme
                 <br />
@@ -71,7 +79,13 @@ export default function Portfolio01(): JSX.Element {
                   Link with Instagram via plug-in
                 </h3>
                 <figure>
-                  <img src='/images/portfolio/img_01_02.jpg' alt='no content' />
+                  <div className={styles.imageWrap}>
+                    <Image
+                      src='/images/portfolio/img_01_02.jpg'
+                      alt='no content'
+                      fill
+                    />
+                  </div>
                   <figcaption>
                     Shooting today&apos;s lunch roast beef sandwich ♪
                   </figcaption>
@@ -86,8 +100,15 @@ export default function Portfolio01(): JSX.Element {
                   Responsive design for comfortable viewing on smartphones and
                   tablets
                 </h3>
+
                 <figure>
-                  <img src='/images/portfolio/img_01_03.jpg' alt='no content' />
+                  <div className={styles.imageWrap}>
+                    <Image
+                      src='/images/portfolio/img_01_03.jpg'
+                      alt='no content'
+                      fill
+                    />
+                  </div>
                   <figcaption>
                     Display confirmation(iPhone、iPad、MacBook Air)
                   </figcaption>
@@ -99,7 +120,13 @@ export default function Portfolio01(): JSX.Element {
                   smartphone right away♪
                 </p>
                 <figure>
-                  <img src='/images/portfolio/img_01_04.jpg' alt='no content' />
+                  <div className={styles.imageWrap}>
+                    <Image
+                      src='/images/portfolio/img_01_04.jpg'
+                      alt='no content'
+                      fill
+                    />
+                  </div>
                   <figcaption>
                     Even if you get close to the iPhone screen... (ﾟдﾟ) Wow!
                     Beautiful!

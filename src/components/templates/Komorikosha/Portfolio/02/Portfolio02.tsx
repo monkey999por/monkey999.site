@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import PageTitle from "@atoms/PageTitle/PageTitle";
 import NewsList from "@molecules/NewsList/NewsList";
 import OtherMakes from "@molecules/OtherMakes/OtherMakes";
@@ -13,7 +15,13 @@ export default function Portfolio02(): JSX.Element {
           <article className={styles.articleDetail}>
             <header className={styles.articleDetailHead}>
               <PageTitle />
-              <img src='/images/portfolio/img_02_01.jpg' alt='no content' />
+              <div className={styles.imageWrap}>
+                <Image
+                  src='/images/portfolio/img_02_01.jpg'
+                  alt='no content'
+                  fill
+                />
+              </div>
               <p>
                 A Primer on WordPress Theme CustomizationBuy on
                 <br />
@@ -75,7 +83,13 @@ export default function Portfolio02(): JSX.Element {
                   website, but also take another step into WordPress and apply
                   it to what you want to do.
                 </p>
-                <img src='/images/portfolio/img_02_02.jpg' alt='no content' />
+                <div className={styles.imageWrap}>
+                  <Image
+                    src='/images/portfolio/img_02_02.jpg'
+                    alt='no content'
+                    fill
+                  />
+                </div>
               </section>
               <section>
                 <h3 className={styles["heading-typeB"]}>
@@ -88,7 +102,13 @@ export default function Portfolio02(): JSX.Element {
                   It would be nice if a girl who is a web designer could read
                   while thinking that she wants to eat crepes (^ ^)
                 </p>
-                <img src='/images/portfolio/img_02_03.jpg' alt='no content' />
+                <div className={styles.imageWrap}>
+                  <Image
+                    src='/images/portfolio/img_02_03.jpg'
+                    alt='no content'
+                    fill
+                  />
+                </div>
               </section>
             </section>
             <footer className={styles.articleDetailFoot}>

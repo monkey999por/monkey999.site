@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import PageTitle from "@atoms/PageTitle/PageTitle";
 import NewsList from "@molecules/NewsList/NewsList";
 import PageTemplate from "@organisms/PageTemplate/PageTemplate";
@@ -13,7 +15,14 @@ export default function About() {
             <article className={styles.articleDetail}>
               <PageTitle />
               <div className={styles.imageContiner}>
-                <img src='/images/about/img_01.png' alt='no content' />
+                <div className={styles.imageWrap}>
+                  <Image
+                    className={styles.image}
+                    src='/images/about/img_01.png'
+                    alt='no content'
+                    fill
+                  />
+                </div>
               </div>
               <p>I don&apos;`t like that kind of thing. I wish I could</p>
               <p>
