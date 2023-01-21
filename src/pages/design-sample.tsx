@@ -33,21 +33,29 @@ async function getFilePathsRecursive(dir: string): Promise<string[]> {
 export default function designSample(props: { file_paths: [] }) {
   const { file_paths } = props;
   console.log(file_paths);
+  const baselist = [...file_paths, ...Array(100 - file_paths.length)].map(
+    (s) => s
+  );
 
   return (
     <>
       <SampleHead title='Design Samples' />
       <div className={styles.waku}>
         <main className={styles.flexbox}>
-          {file_paths.map((file: string, i: number) => {
+          {baselist.map((file: string, i: number) => {
             return (
-              <Link href={`design_samples/${file}`} key={i}>
-                <div className={styles.item}>{file}</div>
+              <Link href={file ? `design_samples/${file}` : "404"} key={i}>
+                <div
+                  className={`${styles.item} ${file ?? styles.noContent} ${
+                    i === baselist.length - 1 ? styles.end : ""
+                  }`}
+                >
+                  {file}
+                </div>
               </Link>
             );
           })}
         </main>
-        <footer className={styles.footer}>Powered by{" dummy "}</footer>
       </div>
     </>
   );
