@@ -1,11 +1,14 @@
 .pageBody {
+  display: grid;
+  gap: 30px;
+  grid-template: 1fr / 720px 220px;
   margin-top: 30px;
 }
 
 .pageBodyMain {
   width: 720px;
+  grid-column-start: 1;
   /* 段組み:左寄せ */
-  float: left;
   .articleDetailHead {
     border-bottom: 1px solid #cccccc;
     margin-bottom: 30px;
@@ -94,10 +97,9 @@
   }
 }
 .pageBodySub {
-  width: 220px;
-  /* 段組み:右寄せ */
-  float: right;
+  grid-column-start: 2;
 }
+
 .articleDetail .border {
   border-bottom: 1px solid #cccccc;
 }

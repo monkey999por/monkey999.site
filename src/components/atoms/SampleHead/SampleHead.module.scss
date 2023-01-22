@@ -7,6 +7,7 @@
   margin: 0;
   overflow: hidden;
   position: relative;
+  min-width: 100%;
 
   @include responsive.sp {
     border-bottom: 1px solid black;
@@ -31,6 +32,10 @@
     @include responsive.sp {
       font-size: 32px;
       color: rgb(54, 155, 181);
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+      overflow: hidden;
     }
   }
 }

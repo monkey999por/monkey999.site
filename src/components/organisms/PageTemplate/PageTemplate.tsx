@@ -30,9 +30,8 @@ export default function PageTemplate(props: Props): JSX.Element {
   return (
     <>
       <div className={styles.container}>
-        <HeadTitle />
         <canvas className={styles.myCanvas} />
-        {/* <SampleHead /> */}
+        <HeadTitle />
         <SampleHeadMemo />
         <div className={styles.page}>
           <HeaderItemMemo prefix='' />
