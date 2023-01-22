@@ -28,7 +28,7 @@ export default function HeaderItem(props: Props): JSX.Element {
         </header>
         <nav className={styles.globalNavi}>
           <ul>
-            <li>
+            <li className={styles.item}>
               <a
                 className={isRoot(router.asPath) ? styles.current : ""}
                 href={globalNavilinks.home}
@@ -37,7 +37,7 @@ export default function HeaderItem(props: Props): JSX.Element {
               </a>
             </li>
 
-            <li>
+            <li className={styles.item}>
               <a
                 className={
                   globalNavilinks.aboutMe === router.asPath
@@ -49,7 +49,7 @@ export default function HeaderItem(props: Props): JSX.Element {
                 {`${prefix}about me`}
               </a>
             </li>
-            <li>
+            <li className={styles.item}>
               <a
                 className={
                   router.asPath.match(/portfolio/g) ? styles.current : ""
@@ -59,7 +59,7 @@ export default function HeaderItem(props: Props): JSX.Element {
                 {`${prefix}portfolios`}
               </a>
             </li>
-            <li>
+            <li className={styles.item}>
               <a
                 className={
                   globalNavilinks.contact === router.asPath

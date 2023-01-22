@@ -1,23 +1,16 @@
 .pageBody {
   margin-top: 30px;
-
-  &::after {
-    content: "";
-    clear: both;
-    display: block;
-  }
+  display: grid;
+  gap: 30px;
+  grid-template: 1fr / 720px 220px;
 }
 
 .pageBodyMain {
-  width: 720px;
-  /* 段組み:左寄せ */
-  float: left;
+  grid-column-start: 1;
 }
 
 .pageBodySub {
-  width: 220px;
-  /* 段組み:右寄せ */
-  float: right;
+  grid-column-start: 2;
 }
 
 .imageContiner {

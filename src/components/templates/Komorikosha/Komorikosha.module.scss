@@ -43,16 +43,9 @@
 }
 
 .portfolioIndex {
-  &::after {
-    /* crear fix */
-    content: "";
-    clear: both;
-    display: block;
-  }
+  display: flex;
   article {
     width: 300px;
-    float: left;
-
     &:nth-child(n + 2) {
       margin-left: 40px;
     }

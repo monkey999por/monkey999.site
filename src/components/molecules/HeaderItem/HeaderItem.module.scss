@@ -5,41 +5,29 @@
 
   ul {
     margin: 0;
-
-    /* clear fix */
-    &::after {
-      content: "";
-      clear: both;
-      display: block;
-    }
-
-    li {
-      &:first-child {
-        border-left: none;
-      }
-
-      a {
-        color: inherit;
-        text-decoration: none;
-        display: block;
-        padding: 5px 0;
-      }
-    }
+    display: flex;
+    flex-flow: row wrap;
   }
-
   li {
     list-style-type: none;
     /* Bodyの幅を④等分 */
     width: 245px;
     /* ★これでリストの横並びができる */
-    float: left;
+
     text-align: center;
     font-size: 14px;
     line-height: 1.429;
     border-left: 1px solid #cccccc;
     padding: 0 10px;
+    &:first-child {
+      border-left: none;
+    }
 
     a {
+      color: inherit;
+      text-decoration: none;
+      display: block;
+      padding: 5px 0;
       &:hover {
         background-color: #058ba9;
         opacity: 0.7;

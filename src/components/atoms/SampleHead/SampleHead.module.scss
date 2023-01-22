@@ -1,3 +1,5 @@
+@use "../../../styles/Responsive.scss" as responsive;
+
 /* dummy */
 .sampleHead {
   background: #333;
@@ -6,10 +8,18 @@
   overflow: hidden;
   position: relative;
 
+  @include responsive.sp {
+    border-bottom: 1px solid black;
+  }
+
   .sampleHead_link {
-    position: absolute;
-    float: left;
-    padding-left: 20px;
+    @include responsive.pc {
+      position: absolute;
+      padding-left: 20px;
+    }
+    @include responsive.sp {
+      display: none;
+    }
   }
   .sampleHead_h1 {
     padding: 0;
@@ -18,10 +28,9 @@
     font-size: 16px;
     line-height: 1.375;
     text-align: center;
+    @include responsive.sp {
+      font-size: 32px;
+      color: rgb(54, 155, 181);
+    }
   }
-  // &::after {
-  //   display: block;
-  //   content: "";
-  //   clear: both;
-  // }
 }

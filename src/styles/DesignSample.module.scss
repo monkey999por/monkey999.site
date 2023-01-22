@@ -1,8 +1,11 @@
 .waku {
   background-color: #333;
+  padding-top: 2rem;
   .flexbox {
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
+    gap: 1em;
     a {
       text-decoration: none;
     }
@@ -10,10 +13,7 @@
       color: initial;
       text-decoration: none;
       padding: 0.5em 1.5em;
-      margin-left: 30px;
-      margin-top: 1em;
-      max-width: 15em;
-      min-width: 15em;
+      min-width: 10em;
       border: 2px solid green;
       font-weight: bold;
       border-radius: 1em;

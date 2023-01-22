@@ -1,15 +1,17 @@
-$pc: 1024px; // PC
-$tab: 680px; // タブレット
-$sp: 480px; // スマホ
+@use "sass:meta";
+
+$pc: 102px; // PC
+$tab: 768px; // タブレット
+$sp: 767px; // スマホ
 
 @mixin pc {
-  @media screen and (max-width: ($pc)) {
+  @media screen and (min-width: ($pc)) {
     @debug meta.content-exists();
     @content;
   }
 }
 @mixin tab {
-  @media screen and (max-width: ($tab)) {
+  @media screen and (min-width: ($tab)) {
     @content;
   }
 }

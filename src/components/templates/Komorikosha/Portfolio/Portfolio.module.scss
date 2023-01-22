@@ -1,22 +1,16 @@
 .pageBody {
   margin-top: 30px;
-}
-.pageBody::after {
-  content: "";
-  clear: both;
-  display: block;
+  display: grid;
+  gap: 30px;
+  grid-template: 1fr / 720px 220px;
 }
 
 .pageBodyMain {
-  width: 720px;
-  /* 段組み:左寄せ */
-  float: left;
+  grid-column-start: 1;
 }
 
 .pageBodySub {
-  width: 220px;
-  /* 段組み:右寄せ */
-  float: right;
+  grid-column-start: 2;
 }
 
 /* 記事一覧 */
@@ -27,6 +21,9 @@
   a {
     display: block;
     padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row-reverse wrap;
 
     &::after {
       content: "";
@@ -40,7 +37,7 @@
 
   .articleListText {
     width: 370px;
-    float: right;
+
     .title {
       font-size: 26px;
       line-height: 1.308;
@@ -60,7 +57,7 @@
   }
   .articleListImage {
     width: 300px;
-    float: left;
+
     position: relative;
     width: 300px;
     height: 163px;
