@@ -23,3 +23,26 @@ templateとpagesで階層を合わせる必要はない
 CDMを読み込むには
 CSS分割
 疎なコンポーネントの設計について考えたい
+
+
+■作業時のメモとか悩んだ部分
+　・CSSアーキテクチャ
+　https://hackmd.io/@oikaze-next/HJL1QUmP9
+　・Next.jsデザインパターン
+　https://maku.blog/p/4is2ahp/
+　
+　・カスタムフック関連
+　https://qiita.com/soarflat/items/b9d3d17b8ab1f5dbfed2
+　https://qiita.com/cheez921/items/af5878b0c6db376dbaf0
+　・これ使えばメモ化が必要かどうかの計測ができる
+　https://ja.reactjs.org/docs/profiler.html
+　
+　・SWR（外部APIとか呼ぶときにブロッキング少なめで使用できるやつ
+　https://zenn.dev/mast1ff/articles/40b3ea4e221c36
+　https://swr.vercel.app/docs/api
+　■CORSについてこれはサーバ側作るときに意識しとかないといけないね
+https://qiita.com/tomoyukilabs/items/81698edd5812ff6acb34
+
+
+https://ics.media/entry/11172/
+→これをNext.jsで使う方法がわかんなかった
