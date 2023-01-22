@@ -7,6 +7,7 @@
   position: relative;
 
   .sampleHead_link {
+    position: absolute;
     float: left;
     padding-left: 20px;
   }
@@ -18,9 +19,9 @@
     line-height: 1.375;
     text-align: center;
   }
-  &::after {
-    display: block;
-    content: "";
-    clear: both;
-  }
+  // &::after {
+  //   display: block;
+  //   content: "";
+  //   clear: both;
+  // }
 }
