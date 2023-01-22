@@ -11,6 +11,15 @@ npm run dev
 npm run pretty
 ```
 
+### productjion
+
+- manegement  
+  https://vercel.com/monkey999por/monkey999-site
+- site  
+  https://monkey999-site.vercel.app/
+- local deploy(design)  
+  http://192.168.10.61/
+
 ### ディレクトリ構成
 
 ```

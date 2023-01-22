@@ -23,6 +23,9 @@ export default function Home() {
           Get started by editing{" "}
           <code className={styles.code}>pages/index.js</code>
         </p>
+        <p>
+          Deployed: <time>2023/1/22</time>
+        </p>
 
         <div className={styles.grid}>
           <a href='https://nextjs.org/docs' className={styles.card}>
