@@ -1,0 +1,79 @@
+@use "../Responsive.scss" as responsive;
+
+$text-color: black;
+$button-color: rgb(195, 216, 223);
+
+.head {
+  color: $text-color;
+  background-color: rgb(106, 106, 219);
+  display: flex;
+  gap: 1em;
+
+  @mixin textHover {
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+  .sitename {
+    margin: auto 0;
+    font-weight: bold;
+    font-size: 1.7rem;
+    padding-left: 1rem;
+    @include textHover;
+  }
+  .links {
+    margin: auto 0;
+    display: flex;
+    gap: 1em;
+
+    .item {
+      @include textHover;
+    }
+
+    @include responsive.sp {
+      //   display: none;
+    }
+  }
+  .account {
+    @include textHover;
+    align-self: flex-end;
+    margin: auto 0;
+  }
+}
+
+.container {
+  color: $text-color;
+  background-color: rgb(15, 166, 177);
+
+  .fieldArea {
+    display: grid;
+    max-width: 48vw;
+    min-width: 35vw;
+    grid-template: repeat(5, 1fr) / repeat(5, 1fr);
+    border: 0.5em solid rgb(54, 175, 90);
+    border-radius: 1em;
+
+    gap: 0 0;
+
+    .field {
+      border: 1px solid black;
+      background-image: "/design_samples/grid-garden/weeds.svg";
+      position: relative;
+      width: 50px;
+      height: 50px;
+    }
+  }
+  .editArea {
+    .buttons {
+      display: flex;
+      flex-flow: row wrap;
+      .volume {
+        background-color: $button-color;
+        border: 1xp solid black;
+        & i::before {
+          content: "\f028";
+        }
+      }
+    }
+  }
+}
