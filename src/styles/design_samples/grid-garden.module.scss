@@ -3,6 +3,10 @@
 $text-color: black;
 $button-color: rgb(195, 216, 223);
 
+@mixin wak {
+  border: 1px solid black;
+}
+
 .head {
   color: $text-color;
   background-color: rgb(106, 106, 219);
@@ -68,10 +72,34 @@ $button-color: rgb(195, 216, 223);
       display: flex;
       flex-flow: row wrap;
       .volume {
-        background-color: $button-color;
-        border: 1xp solid black;
-        & i::before {
-          content: "\f028";
+        // background-color: $button-color;
+        @include wak;
+      }
+      .language {
+        @include wak;
+        .back {
+          @include wak;
+        }
+        .currentLevel {
+          @include wak;
+        }
+        .next {
+          @include wak;
+        }
+      }
+      .levelArea {
+        @include wak;
+      }
+      .description {
+        @include wak;
+      }
+      .codeBlock {
+        @include wak;
+        .rowItems {
+          @include wak;
+          .rowItem {
+            @include wak;
+          }
         }
       }
     }

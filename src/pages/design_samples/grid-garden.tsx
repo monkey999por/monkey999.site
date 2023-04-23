@@ -13,7 +13,7 @@ export default function componentTest(): JSX.Element {
         <div className={styles.account}>monkey999</div>
       </header>
       <main className={styles.container}>
-        <div className='fieldContai'>
+        <div className={styles.fieldContainer}>
           <div className={styles.fieldArea}>
             <div className={styles.field}>1</div>
             <div className={styles.field}>1</div>
@@ -47,7 +47,7 @@ export default function componentTest(): JSX.Element {
           <h2 className={styles.titil}>MONKEY GARDEN</h2>
           <div className={styles.buttons}>
             <div className={styles.volume}>
-              <i />
+              <i>🔊</i>
             </div>
             <div className={styles.language}>日本語</div>
             <div className={styles.levelArea}>
@@ -55,23 +55,23 @@ export default function componentTest(): JSX.Element {
               <div className={styles.currentLevel}>レベル12/28</div>
               <div className={styles.next}>→</div>
             </div>
-            <p className={styles.description}>sample design from GRID GARDEN</p>
-            <div className={styles.codeBlock}>
-              <div className={styles.rowitems}>
-                <div className={styles.rowItem}>#input your code </div>
-                <div className={styles.rowItem}>#grid </div>
-                <div className={styles.rowItem}>indent {"{"}</div>
-                <div className={styles.rowItem}>&nbsp;&nbsp;item</div>
-                <div className={styles.rowItem}>&nbsp;&nbsp;item</div>
-                <div className={styles.rowItem}>&nbsp;&nbsp;item</div>
-                <div className={styles.rowItem}>{"}"}</div>
-                <div className={styles.rowItem}>input here</div>
-                <div className={styles.rowItem}>
-                  <input type='text' />
-                </div>
-                <div className={styles.rowItem}>
-                  <input type='text' />
-                </div>
+          </div>
+          <p className={styles.description}>sample design from GRID GARDEN</p>
+          <div className={styles.codeBlock}>
+            <div className={styles.rowitems}>
+              <div className={styles.rowItem}>#input your code </div>
+              <div className={styles.rowItem}>#grid </div>
+              <div className={styles.rowItem}>indent {"{"}</div>
+              <div className={styles.rowItem}>&nbsp;&nbsp;item</div>
+              <div className={styles.rowItem}>&nbsp;&nbsp;item</div>
+              <div className={styles.rowItem}>&nbsp;&nbsp;item</div>
+              <div className={styles.rowItem}>{"}"}</div>
+              <div className={styles.rowItem}>input here</div>
+              <div className={styles.rowItem}>
+                <input type='text' />
+              </div>
+              <div className={styles.rowItem}>
+                <input type='text' />
               </div>
             </div>
           </div>
