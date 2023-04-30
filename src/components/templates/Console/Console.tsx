@@ -1,7 +1,6 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
-import { useEffect, useRef, useState } from "react";
-import { KeyboardEvent } from "react";
+import { KeyboardEvent, useEffect, useRef, useState } from "react";
 
 import styles from "./console.module.scss";
 
@@ -128,6 +127,7 @@ export default function Console(): JSX.Element {
    */
   const runCommand = (inputInfo: string) => {
     // コマンド実行
+
     const [inputCommandName, args] = inputInfo.split(/(?<=^[^\s]+)\s/);
 
     const command = commands.filter(
