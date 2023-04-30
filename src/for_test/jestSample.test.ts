@@ -1,6 +1,12 @@
-import { sum, throwAnything } from "./jestSample";
+import { expect, test } from "@jest/globals";
 
-test("should first", () => {
+import { forEach, sum, throwAnything } from "./jestSample";
+
+// test.onlyにするとこいつだけ実行される
+// 基本的な使い方としては、失敗したテストにonlyつけて再テストしてみるとか（他のテストの影響を受けていないかの確認）
+// beforeAll, beforeEachなんかを使ってるとそういうことがあるかも
+// 参考：https://jestjs.io/ja/docs/setup-teardown
+test.only("should first", () => {
   expect(sum(1, 2)).toBe(3);
 });
 
@@ -19,4 +25,13 @@ test("isNull", () => {
 
 test("Throws", () => {
   expect(() => throwAnything()).toThrow("anything error");
+});
+
+/**
+ * mock sample
+ */
+const mockCallback = jest.fn((x) => 42 + x);
+
+test("forEach mock func", () => {
+  forEach([0, 1], mockCallback);
 });
