@@ -11,7 +11,7 @@ npm run dev
 npm run pretty
 ```
 
-### productjion
+### production
 
 - manegement  
   https://vercel.com/monkey999por/monkey999-site
@@ -42,3 +42,9 @@ npm run pretty
     ├─styles
     └─types
 ```
+
+### その他
+
+- `jest`のサンプルあり
+- `typescript, nextjs`のサンプルもあり
+- `nodejs`なんかの javascript エコシステム関連もここで検証
