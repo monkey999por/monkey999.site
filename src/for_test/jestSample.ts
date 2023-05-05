@@ -1,5 +1,11 @@
-export function sum(x: number, y: number): number {
-  return x + y;
+import hoge from "./hoge";
+
+export function sum(x: number, y: number): any {
+  return x + y + hoge();
+}
+
+export function callSum() {
+  return sum(1, 2);
 }
 
 export function throwAnything(): void {
