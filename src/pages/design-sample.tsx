@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 
 import Link from "next/link";
+import { ReactElement } from "react";
 
 import SampleHead from "@atoms/SampleHead/SampleHead";
 import styles from "@styles/DesignSample.module.scss";
@@ -30,7 +31,7 @@ async function getFilePathsRecursive(dir: string): Promise<string[]> {
   }
   return file_paths;
 }
-export default function designSample(props: { file_paths: [] }) {
+export default function designSample(props: { file_paths: [] }): ReactElement {
   const { file_paths } = props;
   console.log(file_paths);
   const baselist = [...file_paths, ...Array(100 - file_paths.length)].map(

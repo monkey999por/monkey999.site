@@ -2,7 +2,7 @@ import { expect, test } from "@jest/globals";
 
 import { callSum, forEach, throwAnything } from "./jestSample";
 
-const hoge = import("./hoge");
+// const hoge = import("./hoge");
 
 jest.mock("./hoge");
 

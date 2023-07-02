@@ -1,13 +1,11 @@
-import styles from "./ContactButton.module.scss";
+import { ReactElement } from "react";
 
-type Params = {
-  styles: { readonly [key: string]: string };
-};
+import styles from "./ContactButton.module.scss";
 
 /**
  * component-test
  */
-export default function ContactButton(): JSX.Element {
+export default function ContactButton(): ReactElement {
   console.log(`render component Waku`);
   return (
     <>

@@ -1,10 +1,10 @@
 import hoge from "./hoge";
 
-export function sum(x: number, y: number): any {
+export function sum(x: number, y: number): number | string {
   return x + y + hoge();
 }
 
-export function callSum() {
+export function callSum(): ReturnType<typeof sum> {
   return sum(1, 2);
 }
 
