@@ -5,8 +5,11 @@ import { ReactElement } from "react";
 
 import styles from "@styles/Home.module.scss";
 
+type CardItem = { link: string; title: string; description?: string };
+
 export default function Home(): ReactElement {
   console.log(`render page Home`);
+
   return (
     <div className={styles.container}>
       <Head>
@@ -29,54 +32,53 @@ export default function Home(): ReactElement {
         </p>
 
         <div className={styles.grid}>
-          <a href='https://nextjs.org/docs' className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+          <Card
+            link='https://nextjs.org/docs'
+            title='Documentation'
+            description='Find in-depth information about Next.js features and API.'
+          />
+          <Card
+            link='https://nextjs.org/learn'
+            title='Learn'
+            description='Learn about Next.js in an interactive course with quizzes!'
+          />
+          <Card
+            link='https://github.com/vercel/next.js/tree/canary/examples'
+            title='Examples'
+            description='Discover and deploy boilerplate example Next.js projects.'
+          />
+          <Card
+            link='https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'
+            title='Deploy'
+            description='Instantly deploy your Next.js site to a public URL with Vercel.'
+          />
 
-          <a href='https://nextjs.org/learn' className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+          <Card
+            link='/monkey999.work/console'
+            title='Console'
+            description='Monkey999 console sample'
+          />
+          <Card
+            link='/komorikosha'
+            title='komorikosha'
+            description='komorikosha sample'
+          />
+          <Card
+            link='/component-test'
+            title='component-test'
+            description='component-test sample'
+          />
+          <Card
+            link='/memo-test'
+            title='React Memo test'
+            description='React.memo, useCallback, useMemo sample'
+          />
 
-          <a
-            href='https://github.com/vercel/next.js/tree/canary/examples'
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href='https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-          <Link href='/monkey999.work/console' className={styles.card}>
-            <h2>Console &rarr;</h2>
-            <p>Monkey999 console sample ddddddddddd</p>
-          </Link>
-
-          <Link href='/komorikosha' className={styles.card}>
-            <h2>komorikosha &rarr;</h2>
-            <p>komorikosha sample</p>
-          </Link>
-          <Link href='/component-test' className={styles.card}>
-            <h2>component-test &rarr;</h2>
-            <p>component-test sample</p>
-          </Link>
-          <Link href='/memo-test' className={styles.card}>
-            <h2>React Memo test &rarr;</h2>
-            <p>React.memo, useCallback, useMemo sample</p>
-          </Link>
-          <Link href='/design-sample' className={styles.card}>
-            <h2>CSS Workout &rarr;</h2>
-            <p>CSSで適当に作ってるサンプルのデザイン</p>
-          </Link>
+          <Card
+            title='CSS Workout'
+            link='/design-sample'
+            description='CSSで適当に作ってるサンプルのデザイン'
+          />
         </div>
       </main>
 
@@ -97,3 +99,16 @@ export default function Home(): ReactElement {
     </div>
   );
 }
+
+const Card: React.FC<CardItem> = ({
+  link,
+  title,
+  description = "not has description",
+}) => {
+  return (
+    <Link href={link} className={styles.card} shallow={false}>
+      <h2>{title} &rarr;</h2>
+      <p>{description}</p>
+    </Link>
+  );
+};
