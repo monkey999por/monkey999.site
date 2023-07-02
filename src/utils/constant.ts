@@ -10,13 +10,14 @@ export const globalNavilinks: {
   cafe: "/komorikosha/portfolio/01",
 };
 
-export const PAGE_INFO: {
+export type PageInfo = {
   path: string;
   item: {
     title: string;
     breadcrumb: string[];
   };
-}[] = [
+};
+export const PAGE_INFO: PageInfo[] = [
   // 上側のグローバルリンク
   {
     path: globalNavilinks.home,

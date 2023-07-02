@@ -1,10 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import { ReactElement } from "react";
 
 import styles from "@styles/Home.module.scss";
 
-export default function Home() {
+export default function Home(): ReactElement {
   console.log(`render page Home`);
   return (
     <div className={styles.container}>

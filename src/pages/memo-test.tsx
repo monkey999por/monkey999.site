@@ -32,8 +32,12 @@ export default function MemoTest(): JSX.Element {
 
   return (
     <>
-      <button onClick={() => setCount1(count1 + 1)}>countup App count</button>
-      <button onClick={() => setCount2(count2 + 1)}>countup Child count</button>
+      <button onClick={() => setCount1(count1 + 1)} type='button'>
+        countup App count
+      </button>
+      <button onClick={() => setCount2(count2 + 1)} type='button'>
+        countup Child count
+      </button>
       <p style={{ color: "black;" }}>App: {count1}</p>
       <InnerChildMemo count={count2} />
       <ChildHasPropsMemo count={count2} />

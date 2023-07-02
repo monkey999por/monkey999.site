@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { ReactElement } from "react";
 
 import PageTitle from "@atoms/PageTitle/PageTitle";
 import NewsList from "@molecules/NewsList/NewsList";
@@ -6,7 +7,7 @@ import PageTemplate from "@organisms/PageTemplate/PageTemplate";
 
 import styles from "./About.module.scss";
 
-export default function About() {
+export default function About(): ReactElement {
   return (
     <>
       <PageTemplate>

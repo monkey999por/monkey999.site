@@ -1,3 +1,3 @@
-export default function hoge() {
+export default function hoge(): string {
   return "hoge ret";
 }
